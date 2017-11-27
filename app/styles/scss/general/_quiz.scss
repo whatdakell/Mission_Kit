@@ -1,0 +1,258 @@
+// @import "compass/css3";
+/*progressbar*/
+body{
+  @extend .din;
+}
+
+.show_purist{
+	height: 10vh;
+	background-color: pink;
+	display: none;
+}
+.show_purist.current{
+display: block;
+}
+#quiz-wrapper{
+  height: 100vh;
+	display:none;
+	padding: 2%;
+&.start {
+	display: block;
+}
+  // width: 100vh;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+  background: white;
+  color: black;
+}
+#quizzie {
+
+  ul {
+      list-style: none;
+      display: block;
+      width: auto;
+      margin: 1vh 2vw;
+      padding: 1vh 2vw;
+      // overflow: auto;
+      display:none;
+    &.current {
+      display: block;
+    }
+		.awnser_row{
+		  width: 100%;
+		  height: 100%;
+		  display: flex;
+
+
+			@include bp(xs){
+				align-items: stretch;
+				flex-wrap: wrap;
+				margin: 3% 0;
+			}
+			@include bp(s){
+				align-items: stretch;
+				flex-wrap: wrap;
+				margin: 2vh 0;
+			}
+			@include bp(l){
+				justify-content: space-around;
+				align-items: baseline;
+			}
+			.face{
+
+				img{
+					@include bp(l){
+						width: 100%;
+					}
+					width: 40%;
+				}
+				span.changename{
+					font-size: 2vh;
+					padding: 0;
+					line-height: 1;
+					margin: 0;
+					display: block;
+				}
+			}
+		  button{
+		    background: transparent;
+		    border: none;
+		    padding: 0;
+		    margin: 0;
+				color: black;
+				outline: none;
+				font-family: "HelveticaNeue-Bold";
+
+				@extend .heading5;
+				// font-family: 'din_alternatebold';
+				// text-transform: uppercase;
+					@include bp(xs){
+						width: 100%;
+						padding-bottom: 3%;
+					}
+					@include bp(s){
+						width: 100%;
+						padding-bottom: 3%;
+					}
+					@include bp(l){
+						width: 30%;
+						padding-bottom: 3%;
+					}
+				img{
+
+					outline: none;
+					@include bp(xs){
+						height: 13vh;
+						object-fit: cover;
+						width: 100%;
+						padding-bottom: 0px;
+					}
+					@include bp(s){
+						height: 9em;
+						object-fit: cover;
+						width: 100%;
+						padding-bottom: 0px;
+					}
+					@include bp(l){
+						height: auto;
+								padding-bottom: 5%;
+					}
+				}
+		}
+		}
+
+
+    li {
+      &.question {
+          display: block;
+          float: none;
+          width: 100%;
+          text-align: center;
+          margin: 0;
+					overflow: auto;
+          // margin-bottom: 2%;
+
+					.question-wrap {
+							display: block;
+							padding: 1%;
+							margin: 2% 10%;
+							@extend .hv_bold;
+							// @extend .heading2;
+							@include bp(xs){
+								margin: 5% 1%;
+								height: 7em;
+
+							}
+							@include bp(s){
+								margin: 5% 1%;
+								// height: 7em;
+
+							}
+							@include bp(m){
+								margin: 2vh 5vw;
+							}
+
+							position: relative;
+							@extend .roska;
+							// @include border-radius(10px);
+
+								&:after {
+									content: '';
+									width: 30%;
+									height: .5em;
+									background: black;
+									position: absolute;
+									left: 50%;
+									transform: translateX(-150%);
+									bottom: 0;
+									// transition: all 1.5s ease-in-out .3s;
+									// z-index: -1; /*put it behind the numbers*/
+
+							}
+							&:before {
+								content: '';
+								width: 30%;
+								height: .5em;
+								background: black;
+								position: absolute;
+								left: 50%;
+								transition: all 1.5s ease-in-out .5s;
+								transform: translateX(-150%);
+								top: 0;
+								// z-index: -1; /*put it behind the numbers*/
+
+						}
+
+
+					h1{
+						// @extend .heading3;
+						width: 50%;
+						margin: 1vh auto;
+						text-transform: uppercase;
+						@include bp(xs){
+							width: 100%;
+							position: absolute;
+							top: 50%;
+							left: 50%;
+							margin: 0;
+							transform: translate(-50%,-50%);
+							transform-origin: center;
+						}
+						@include bp(s){
+							width: 100%;
+						}
+						@include bp(m){
+							width: 70%;
+						}
+						// @include bp(l){
+						// 	width: 50%;
+						// }
+					}
+					}
+      }
+    }
+    li:last-child {
+        margin-right: 0;
+    }
+  }
+
+  /* Content */
+	ul.current {
+		.question-wrap {
+			&:before{
+					animation: moveline .6s ease forwards;
+			}
+	        &:after {
+	          // z-index: -1; /*put it behind the numbers*/
+						animation: moveline 1s ease forwards .1s;
+
+	      }
+
+	}
+}
+@keyframes moveline{
+	to{
+			    transform: translate(-50%,0);
+					opacity: 1;
+	}
+}
+
+
+
+  .answer-wrap {
+      @extend .question-wrap;
+      @include transition(background-color 0.5s ease);
+      &:hover {
+      }
+  }
+}

@@ -5,25 +5,40 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Website Title</title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+				<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0;" />
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
         <link rel="stylesheet" href="styles/styles.css">
     </head>
     <body>
-
-        <!-- Add your site or application content here -->
-        <p>Content</p>
-
+			<div class="embed_quiz">
+			<iframe src="https://www.thenorthface.com/featured/mission_kit_embedquiz.html" width="500px" height="100px"  frameborder="0"></iframe>
+	</div>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+				var iframe = document.getElementsByTagName('iframe')[0];
+var url = iframe.src;
+var getData = function (data) {
+    if (data && data.query && data.query.results && data.query.results.resources && data.query.results.resources.content && data.query.results.resources.status == 200) loadHTML(data.query.results.resources.content);
+    else if (data && data.error && data.error.description) loadHTML(data.error.description);
+    else loadHTML('Error: Cannot load ' + url);
+};
+var loadURL = function (src) {
+    url = src;
+    var script = document.createElement('script');
+    script.src = 'https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20data.headers%20where%20url%3D%22' + encodeURIComponent(url) + '%22&format=json&diagnostics=true&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=getData';
+    document.body.appendChild(script);
+};
+var loadHTML = function (html) {
+    iframe.src = 'about:blank';
+    iframe.contentWindow.document.open();
+    iframe.contentWindow.document.write(html.replace(/<head>/i, '<head><base href="' + url + '"><scr' + 'ipt>document.addEventListener("click", function(e) { if(e.target && e.target.nodeName == "A") { e.preventDefault(); parent.loadURL(e.target.href); } });</scr' + 'ipt>'));
+
         </script>
-        
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
         <script src="scripts/app.js"></script>
     </body>
 </html>

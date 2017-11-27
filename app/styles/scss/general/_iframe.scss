@@ -1,0 +1,10 @@
+.embed_quiz{
+	margin: 0 auto;
+	text-align: center;
+iframe {
+  height:calc(90vh - 4px);
+	// height: 100%;
+	// width: 100%;
+  width:calc(90vw - 4px);
+}
+}

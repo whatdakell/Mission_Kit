@@ -1,0 +1,3276 @@
+<div class="parsys content">
+	<div class="basecomponent section customhtml2">
+		<style>
+			ul.results h3 {
+				font-family: "HelveticaNeueW02-77BdCn_694069", Helvetica, sans-serif;
+			}
+
+			ul.results h1 {
+				padding: 3% 0% 1%;
+			}
+
+			span.changename {
+				font-size: .8em;
+			}
+
+			@media (max-width: 1080px) {
+				ul.results h3 {
+					padding-bottom: 1em;
+				}
+			}
+			@media (min-width: 768px) and (max-width: 1024px) {
+				header .upper .logo {
+					max-width: 15%!important;
+					margin: 5% auto!important;
+				}
+				header .upper img {
+					width: 70%!important;
+					margin: 2% auto!important;
+				}
+				header .bottom {
+					width: 60%;
+					margin: 2% auto;
+					font-size: 1.1rem!important;
+				}
+				header .bottom h3 {
+
+					margin-top: 10%;
+				}
+			}
+
+			@media (min-width:1024px) {
+				div#resultIMG {
+					width: 70%;
+					margin: 0 auto;
+				}
+				#resultIMG img {}
+			}
+
+			@media (min-width: 375px) and (max-width: 1024px) {
+				div#resultIMG {
+					padding: 5%;
+					width: 70%;
+					margin: 0 auto;
+				}
+				//#resultIMG  img{
+				//height:230px;
+				//}
+				li.results-inner {
+					height: 90vh;
+					position: relative;
+				}
+				.show_down {
+					position: absolute;
+					bottom: 0;
+					left: 50%;
+					transform: translateX(-50%);
+				}
+
+
+			}
+
+			@media (max-width: 767px) {
+				width: 30%;
+
+			}
+
+			.custom__carousel {
+				padding: 2em 0%;
+			}
+
+			#body-container {
+				background: transparent!important;
+			}
+
+			@media (max-width: 767px) {
+				header .bottom h3 br {
+					line-height: 1.5em;
+				}
+			}
+
+			@media (max-width: 767px) {
+				#quiz-wrapper {
+					//height:100vh;
+				}
+
+			}
+
+			@media (min-width: 768px) {
+				#quiz-wrapper {
+					//height:100vh;
+				}
+			}
+
+			@media (min-width: 1024px) {
+				#quiz-wrapper {
+					height: auto;
+				}
+			}
+
+			@media (min-width: 992px) {
+				body {
+					font-size: 1rem;
+				}
+			}
+
+			h1,
+			.heading1 {
+				font-size: 2.5em;
+				line-height: 1.5em;
+			}
+
+			@media (max-width: 767px) {
+				h1,
+				.heading1 {
+					font-size: 1.7em;
+					line-height: 1.2em;
+				}
+			}
+
+			h2,
+			.heading2 {
+				font-size: 2em;
+				line-height: 1.5em;
+			}
+
+			h3,
+			.heading3 {
+				font-size: 1.5em;
+				line-height: 1.5em;
+			}
+
+			h4,
+			.heading4,
+			.results button,
+			.results .results-inner p {
+				font-size: 1.1em;
+				line-height: 1.5em;
+			}
+
+			h5,
+			.heading5,
+			#quizzie ul .awnser_row button {
+				font-size: 1.125em;
+				line-height: 1.5em;
+			}
+
+			h6,
+			.heading6,
+			.quiz_nav .progressbar li span {
+				font-size: 1em;
+				line-height: 1.5em;
+			}
+
+			p {
+				font-size: 1em;
+				line-height: 1.5em;
+			}
+
+			.purist_products {
+				display: none;
+			}
+
+			.purist_products.current {
+				display: block;
+			}
+
+			.fuse_products {
+				display: none;
+			}
+
+			.fuse_products.current {
+				display: block;
+			}
+
+			#fuse .current {
+				display: block;
+			}
+
+			#purist .current {
+				display: block;
+			}
+
+			.purist_products {
+				display: none;
+			}
+
+			.purist_products.current {
+				display: block;
+			}
+
+			.fuse_products {
+				display: none;
+			}
+
+			.fuse_products.current {
+				display: block;
+			}
+
+			header {
+				height: -webkit-calc(100vh - 150px);
+				height: calc(100vh - 150px);
+				position: relative;
+				padding: 1%;
+				color: white;
+				text-align: center;
+				overflow: hidden;
+			}
+
+			@media (min-width: 768px) {
+				header {
+					height: -webkit-calc(100vh - 127px);
+					height: calc(100vh - 127px);
+				}
+			}
+
+			@media (max-width: 767px) {
+				header {
+					height: -webkit-calc(100vh - 61px);
+					height: calc(100vh - 61px);
+				}
+			}
+
+			@media (min-width: 992px) {
+				header {
+					height: -webkit-calc(100vh - 150px);
+					height: calc(100vh - 150px);
+				}
+			}
+
+			header .background-wrapper {
+				position: absolute;
+				left: 50%;
+				-webkit-transform: translateX(-50%);
+				-ms-transform: translateX(-50%);
+				transform: translateX(-50%);
+				top: 0;
+				z-index: -3;
+				height: 100%;
+				overflow: hidden;
+				width: 90%;
+			}
+
+			header .background-wrapper img {
+				-o-object-fit: cover;
+				object-fit: cover;
+				width: 100%;
+				-o-object-position: bottom;
+				object-position: bottom;
+				height: 100%;
+				-webkit-animation: scale 10s forwards .5s;
+				animation: scale 10s forwards .5s;
+			}
+
+			header .upper img {
+				margin: 1% auto;
+				width: 30%;
+			}
+
+			@media (max-width: 767px) {
+				header .upper img {
+					margin: 1% auto;
+					width: 80%;
+				}
+			}
+
+			header .upper .plus {
+				width: 20%;
+			}
+
+			@media (max-width: 767px) {
+				header .upper .plus {
+					width: 60%;
+					margin: 5% auto;
+				}
+			}
+
+			header .upper .logo {
+				max-width: 5%;
+				margin: 1% auto;
+			}
+
+			@media (max-width: 767px) {
+				header .upper .logo {
+					max-width: 15%;
+					margin: 5%;
+				}
+			}
+
+			header .upper h1 {
+				margin: 0 !important;
+				letter-spacing: .5em;
+				line-height: 2em;
+				color: white;
+			}
+
+			header .upper h1 span {
+				letter-spacing: .3em;
+			}
+
+			header .upper h2 {
+				letter-spacing: .5em;
+				color: white;
+			}
+
+			header .upper h3 {
+				letter-spacing: .2em;
+				color: white;
+			}
+
+			header .bottom {
+				width: 60%;
+				margin: 2% auto;
+			}
+
+			@media (max-width: 767px) {
+				header .bottom {
+					width: 90%;
+					margin: 0% auto;
+					font-size: .8rem;
+				}
+			}
+
+			header .bottom h3 {
+				font-family: "HelveticaNeue-Bold";
+				text-transform: none;
+				color: white;
+				margin: 0 auto;
+				letter-spacing: 0;
+				padding: 0% 5%;
+			}
+
+			}
+
+			@media (max-width: 767px) {
+				header .bottom h3 {
+					font-size: 10px;
+				}
+			}
+
+			@media (min-width: 768px) {
+				header .bottom h3 br {
+					line-height: 2em;
+				}
+			}
+
+			header .bottom p {
+				letter-spacing: .1em;
+				line-height: 2em;
+				font-family: "HelveticaNeueW02-77BdCn_694069", Helvetica, sans-serif;
+			}
+
+			header .onchange {
+				opacity: 1;
+			}
+
+			header .onchange.active {
+				-webkit-animation: opacityOUT 1s forwards;
+				animation: opacityOUT 1s forwards;
+			}
+
+			header .onchange.upper {
+				-webkit-animation-delay: 1ms;
+				animation-delay: 1ms;
+			}
+
+			header .onchange.bottom {
+				-webkit-animation-delay: 300ms;
+				animation-delay: 300ms;
+			}
+
+			@-webkit-keyframes scale {
+				from {
+					-webkit-transform: scale(1);
+					transform: scale(1);
+				}
+				to {
+					-webkit-transform: scale(1.3);
+					transform: scale(1.3);
+				}
+			}
+
+			@keyframes scale {
+				from {
+					-webkit-transform: scale(1);
+					transform: scale(1);
+				}
+				to {
+					-webkit-transform: scale(1.3);
+					transform: scale(1.3);
+				}
+			}
+
+			.arrow_wrap {
+				position: relative;
+			}
+
+			.arrow_wrap .arrow_down {
+				position: absolute;
+				bottom: 0;
+				left: 50%;
+				-webkit-transform: translateX(-50%);
+				-ms-transform: translateX(-50%);
+				transform: translateX(-50%);
+				background-color: black;
+				display: block;
+				width: 5em;
+				padding: 1% 0%;
+				text-decoration: none;
+			}
+
+			.arrow_wrap .arrow_down span {
+				color: white;
+				font-size: 2.5em;
+				font-weight: 100;
+				font-family: FontAwesome;
+			}
+
+
+
+			.show_down {
+				background-color: black;
+				display: block;
+
+				width: 5em;
+				margin: 0 auto;
+				text-decoration: none;
+			}
+
+			.show_down span {
+				color: white;
+				font-size: 2.5em;
+				font-weight: 100;
+				font-family: FontAwesome;
+			}
+
+			@-webkit-keyframes opacityOUT {
+				from {
+					opacity: 1;
+				}
+				to {
+					opacity: 0;
+				}
+			}
+
+			@keyframes opacityOUT {
+				from {
+					opacity: 1;
+				}
+				to {
+					opacity: 0;
+				}
+			}
+
+			@-webkit-keyframes opacityIN {
+				to {
+					opacity: 1;
+				}
+			}
+
+			@keyframes opacityIN {
+				to {
+					opacity: 1;
+				}
+			}
+
+			/*progressbar*/
+
+			.show_purist {
+				height: 10vh;
+				background-color: pink;
+				display: none;
+			}
+
+			.show_purist.current {
+				display: block;
+			}
+
+			#quiz-wrapper {
+				display: none;
+				padding: 2%;
+			}
+
+			#quiz-wrapper.start {
+				display: block;
+			}
+
+			html,
+			body {
+				margin: 0;
+				padding: 0;
+				width: 100%;
+				height: 100%;
+			}
+
+			* {
+				-webkit-box-sizing: border-box;
+				box-sizing: border-box;
+			}
+
+			body {
+				background: white;
+				color: black;
+			}
+
+			#quizzie {
+				/* Content */
+			}
+
+			#quizzie ul {
+				list-style: none;
+				display: block;
+				width: auto;
+				margin: 0% 2%;
+				padding: 0% 2%;
+				display: none;
+			}
+
+			#quizzie ul.current {
+				display: block;
+			}
+
+			#quizzie ul .awnser_row {
+				width: 100%;
+				height: 100%;
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex;
+			}
+
+			@media (max-width: 767px) {
+				#quizzie ul .awnser_row {
+					-webkit-box-align: stretch;
+					-ms-flex-align: stretch;
+					align-items: stretch;
+					-ms-flex-wrap: wrap;
+					flex-wrap: wrap;
+					margin: 3% 0;
+				}
+			}
+
+			@media (min-width: 768px) {
+				#quizzie ul .awnser_row {
+					-webkit-box-align: stretch;
+					-ms-flex-align: stretch;
+					align-items: stretch;
+					-ms-flex-wrap: wrap;
+					flex-wrap: wrap;
+					margin: 3% 0;
+				}
+			}
+
+			@media (min-width: 1024px) {
+				#quizzie ul .awnser_row {
+					-ms-flex-pack: distribute;
+					justify-content: space-around;
+					-webkit-box-align: baseline;
+					-ms-flex-align: baseline;
+					align-items: baseline;
+				}
+			}
+
+			#quizzie ul .awnser_row .face img {
+				width: 40%;
+			}
+
+			@media (min-width: 1024px) {
+				#quizzie ul .awnser_row .face img {
+					width: 100%;
+				}
+			}
+
+			#quizzie ul .awnser_row button {
+				background: transparent;
+				border: none;
+				padding: 0;
+				margin: 0;
+				color: black;
+				outline: none;
+				font-family: "HelveticaNeue-Bold";
+			}
+
+			@media (max-width: 767px) {
+				#quizzie ul .awnser_row button {
+					width: 100%;
+					padding-bottom: 3%;
+				}
+			}
+
+			@media (min-width: 768px) {
+				#quizzie ul .awnser_row button {
+					width: 100%;
+					padding-bottom: 3%;
+				}
+			}
+
+			@media (min-width: 1024px) {
+				#quizzie ul .awnser_row button {
+					width: 30%;
+					padding-bottom: 3%;
+				}
+			}
+
+			#quizzie ul .awnser_row button img {
+				outline: none;
+			}
+
+			@media (max-width: 767px) {
+				#quizzie ul .awnser_row button img {
+					height: 6em;
+					-o-object-fit: cover;
+					object-fit: cover;
+					width: 100%;
+					padding-bottom: 0px;
+				}
+			}
+
+			@media (min-width: 768px) {
+				#quizzie ul .awnser_row button img {
+					height: 9em;
+					-o-object-fit: cover;
+					object-fit: cover;
+					width: 100%;
+					padding-bottom: 0px;
+				}
+			}
+
+			@media (min-width: 1024px) {
+				#quizzie ul .awnser_row button img {
+					height: auto;
+					padding-bottom: 5%;
+				}
+			}
+
+			#quizzie ul li.question,
+			#quizzie ul .results li.results-inner,
+			.results #quizzie ul li.results-inner {
+				display: block;
+				float: none;
+				width: 100%;
+				text-align: center;
+				margin: 0;
+				overflow: auto;
+				margin-bottom: 2%;
+			}
+
+			#quizzie ul li.question .question-wrap,
+			#quizzie ul .results li.results-inner .question-wrap,
+			.results #quizzie ul li.results-inner .question-wrap,
+			#quizzie ul li.question .answer-wrap,
+			#quizzie ul .results li.results-inner .answer-wrap,
+			.results #quizzie ul li.results-inner .answer-wrap {
+				display: block;
+				padding: 1%;
+				margin: 2% 10%;
+				position: relative;
+			}
+
+			@media (max-width: 767px) {
+				#quizzie ul li.question .question-wrap,
+				#quizzie ul .results li.results-inner .question-wrap,
+				.results #quizzie ul li.results-inner .question-wrap,
+				#quizzie ul li.question .answer-wrap,
+				#quizzie ul .results li.results-inner .answer-wrap,
+				.results #quizzie ul li.results-inner .answer-wrap {
+					margin: 5% 1%;
+					height: 9em;
+				}
+			}
+
+			@media (min-width: 768px) {
+				#quizzie ul li.question .question-wrap,
+				#quizzie ul .results li.results-inner .question-wrap,
+				.results #quizzie ul li.results-inner .question-wrap,
+				#quizzie ul li.question .answer-wrap,
+				#quizzie ul .results li.results-inner .answer-wrap,
+				.results #quizzie ul li.results-inner .answer-wrap {
+					margin: 5% 1%;
+				}
+			}
+
+			@media (min-width: 992px) {
+				#quizzie ul li.question .question-wrap,
+				#quizzie ul .results li.results-inner .question-wrap,
+				.results #quizzie ul li.results-inner .question-wrap,
+				#quizzie ul li.question .answer-wrap,
+				#quizzie ul .results li.results-inner .answer-wrap,
+				.results #quizzie ul li.results-inner .answer-wrap {
+					margin: 2% 10%;
+				}
+			}
+
+			#quizzie ul li.question .question-wrap:after,
+			#quizzie ul .results li.results-inner .question-wrap:after,
+			.results #quizzie ul li.results-inner .question-wrap:after,
+			#quizzie ul li.question .answer-wrap:after,
+			#quizzie ul .results li.results-inner .answer-wrap:after,
+			.results #quizzie ul li.results-inner .answer-wrap:after {
+				content: '';
+				width: 30%;
+				height: .5em;
+				background: black;
+				position: absolute;
+				left: 50%;
+				-webkit-transform: translateX(-150%);
+				-ms-transform: translateX(-150%);
+				transform: translateX(-150%);
+				bottom: 0;
+			}
+
+			#quizzie ul li.question .question-wrap:before,
+			#quizzie ul .results li.results-inner .question-wrap:before,
+			.results #quizzie ul li.results-inner .question-wrap:before,
+			#quizzie ul li.question .answer-wrap:before,
+			#quizzie ul .results li.results-inner .answer-wrap:before,
+			.results #quizzie ul li.results-inner .answer-wrap:before {
+				content: '';
+				width: 30%;
+				height: .5em;
+				background: black;
+				position: absolute;
+				left: 50%;
+				-webkit-transition: all 1.5s ease-in-out .5s;
+				transition: all 1.5s ease-in-out .5s;
+				-webkit-transform: translateX(-150%);
+				-ms-transform: translateX(-150%);
+				transform: translateX(-150%);
+				top: 0;
+			}
+
+			#quizzie ul li.question .question-wrap h1,
+			#quizzie ul .results li.results-inner .question-wrap h1,
+			.results #quizzie ul li.results-inner .question-wrap h1,
+			#quizzie ul li.question .answer-wrap h2,
+			#quizzie ul .results li.results-inner .answer-wrap h2,
+			.results #quizzie ul li.results-inner .answer-wrap h2 {
+				width: 50%;
+				margin: 2% auto;
+			}
+
+			@media (max-width: 767px) {
+				#quizzie ul li.question .question-wrap h1,
+				#quizzie ul .results li.results-inner .question-wrap h1,
+				.results #quizzie ul li.results-inner .question-wrap h1,
+				#quizzie ul li.question .answer-wrap h2,
+				#quizzie ul .results li.results-inner .answer-wrap h2,
+				.results #quizzie ul li.results-inner .answer-wrap h2 {
+					width: 100%;
+					position: absolute;
+					top: 50%;
+					font-size: 1.7em;
+					left: 50%;
+					margin: 0;
+					-webkit-transform: translate(-50%, -50%);
+					-ms-transform: translate(-50%, -50%);
+					transform: translate(-50%, -50%);
+					-webkit-transform-origin: center;
+					-ms-transform-origin: center;
+					transform-origin: center;
+				}
+			}
+
+			@media (min-width: 768px) {
+				#quizzie ul li.question .question-wrap h1,
+				#quizzie ul .results li.results-inner .question-wrap h1,
+				.results #quizzie ul li.results-inner .question-wrap h1,
+				#quizzie ul li.question .answer-wrap h2,
+				#quizzie ul .results li.results-inner .answer-wrap h2,
+				.results #quizzie ul li.results-inner .answer-wrap h2 {
+					width: 100%;
+				}
+			}
+
+			@media (min-width: 992px) {
+				#quizzie ul li.question .question-wrap h1,
+				#quizzie ul .results li.results-inner .question-wrap h1,
+				.results #quizzie ul li.results-inner .question-wrap h1,
+				#quizzie ul li.question .answer-wrap h2,
+				#quizzie ul .results li.results-inner .answer-wrap h2,
+				.results #quizzie ul li.results-inner .answer-wrap h2 {
+					width: 70%;
+				}
+			}
+
+			@media (min-width: 1024px) {
+				#quizzie ul li.question .question-wrap h1,
+				#quizzie ul .results li.results-inner .question-wrap h1,
+				.results #quizzie ul li.results-inner .question-wrap h1,
+				#quizzie ul li.question .answer-wrap h2,
+				#quizzie ul .results li.results-inner .answer-wrap h2,
+				.results #quizzie ul li.results-inner .answer-wrap h2 {
+					width: 80%;
+				}
+			}
+
+			#quizzie ul li:last-child {
+				margin-right: 0;
+			}
+
+			#quizzie ul.current .question-wrap:before,
+			#quizzie ul.current .answer-wrap:before {
+				-webkit-animation: moveline .6s ease forwards;
+				animation: moveline .6s ease forwards;
+			}
+
+			#quizzie ul.current .question-wrap:after,
+			#quizzie ul.current .answer-wrap:after {
+				-webkit-animation: moveline 1s ease forwards .1s;
+				animation: moveline 1s ease forwards .1s;
+			}
+
+			@-webkit-keyframes moveline {
+				to {
+					-webkit-transform: translate(-50%, 0);
+					transform: translate(-50%, 0);
+					opacity: 1;
+				}
+			}
+
+			@keyframes moveline {
+				to {
+					-webkit-transform: translate(-50%, 0);
+					transform: translate(-50%, 0);
+					opacity: 1;
+				}
+			}
+
+			#quizzie .answer-wrap {
+				-webkit-transition: background-color 0.5s ease;
+				transition: background-color 0.5s ease;
+			}
+
+			.results {
+				list-style: none;
+				display: block;
+				width: auto;
+				margin: 2% 2%;
+				padding: 2%;
+				text-align: center;
+				display: none;
+			}
+
+			.results button {
+				background: black;
+				color: white;
+				border: none;
+				position: static;
+				margin: 3% 0%;
+				padding: 1% 2%;
+				text-transform: uppercase;
+				letter-spacing: .2em;
+			}
+
+			.results .results-inner p {
+				letter-spacing: 0;
+				text-align: center;
+				font-family: "HelveticaNeue-Bold";
+				margin: 0 auto;
+				width: 80%;
+				padding: 0% 2%;
+				line-height: 1.3em;
+			}
+
+			@media (max-width: 767px) {
+				.results .results-inner p {
+					width: 100%;
+					padding: 2% 0% 2%;
+					font-size: 1em;
+				}
+			}
+
+			.results.current {
+				display: block;
+			}
+
+			img {
+				max-width: 100%;
+				height: auto;
+			}
+
+			.radio-toolbar label {
+				display: inline-block;
+				background-color: white;
+				/* padding: 4px 11px; */
+				font-family: HelveticaNeue;
+				font-weight: bold;
+				padding: 3%;
+				width: 1em;
+				height: 1em;
+				/* font-size: 16px; */
+				color: black;
+				display: -webkit-inline-box;
+				display: -ms-inline-flexbox;
+				display: inline-flex;
+				margin: 1%;
+				/* flex-direction: row; */
+				-webkit-box-align: center;
+				-ms-flex-align: center;
+				align-items: center;
+				-webkit-box-pack: center;
+				-ms-flex-pack: center;
+				justify-content: center;
+				/* cursor: pointer; */
+				/* text-align: center; */
+				border: 1px solid black;
+				/* vertical-align: middle; */
+			}
+
+			.radio-toolbar input[type="radio"]:checked+label {
+				background-color: #bbb;
+			}
+
+			.radio-toolbar input[type="radio"] {
+				display: none;
+			}
+
+			#GetKit {
+				padding: 5%;
+				background-color: #fff;
+			}
+
+			#GetKit h2 {
+				color: black;
+			}
+
+			#GetKit h4 {
+				color: black;
+			}
+
+			#abc {
+				width: 100%;
+				height: 100%;
+				opacity: .95;
+				top: 0;
+				left: 0;
+				display: none;
+				position: fixed;
+				background-color: #313131;
+				overflow: auto;
+			}
+
+			.FA {
+				position: absolute;
+				right: 1%;
+				top: 1%;
+				font-size: 20px;
+				color: black;
+			}
+
+			.popupContact {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				-webkit-transform: translate(-50%, -50%);
+				-ms-transform: translate(-50%, -50%);
+				transform: translate(-50%, -50%);
+			}
+
+			hr {
+				margin: 0;
+				border: 0;
+				border-top: 1px solid black;
+			}
+
+			input[type=text] {
+				width: 82%;
+				padding: 10px;
+
+				border: 1px solid #ccc;
+				padding-left: 40px;
+				margin: 3% auto;
+				font-size: 16px;
+			}
+
+			#submit {
+				text-decoration: none;
+				width: 70%;
+				margin: 0 auto;
+				text-align: center;
+				display: block;
+				background-color: black;
+				color: #fff;
+			}
+
+			.FA {
+				font-family: FontAwesome;
+			}
+
+			.quiz_nav {
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-align: center;
+				-ms-flex-align: center;
+				align-items: center;
+				-webkit-box-pack: center;
+				-ms-flex-pack: center;
+				justify-content: center;
+			}
+
+			@media (min-width: 768px) {
+				.quiz_nav .steeplogo {
+					max-width: 7%;
+					position: absolute;
+					left: 5%;
+				}
+			}
+
+			@media (max-width: 767px) {
+				.quiz_nav .steeplogo {
+					height: 3em;
+					margin: 5%;
+
+				}
+			}
+
+			@media (min-width: 768px) {
+				.quiz_nav .tnflogo {
+					max-width: 7%;
+					position: absolute;
+					right: 5%;
+				}
+			}
+
+			@media (max-width: 767px) {
+				.quiz_nav .tnflogo {
+					height: 3em;
+					margin: 5%;
+
+
+				}
+			}
+
+			.quiz_nav .progressbar {
+				margin-bottom: 2%;
+				overflow: hidden;
+				width: 50%;
+				font-family: "HelveticaNeueW02-77BdCn_694069", Helvetica, sans-serif;
+				display: table;
+			}
+
+			@media (max-width: 767px) {
+				.quiz_nav .progressbar {
+					display: none;
+				}
+			}
+
+			@media (min-width: 768px) {
+				.quiz_nav .progressbar {
+					width: 80%;
+				}
+			}
+
+			@media (min-width: 992px) {
+				.quiz_nav .progressbar {
+					width: 50%;
+				}
+			}
+
+			.quiz_nav .progressbar li {
+				list-style-type: none;
+				height: 3.5em;
+				font-family: "HelveticaNeueW02-77BdCn_694069", Helvetica, sans-serif;
+				display: table-cell;
+				width: 3%;
+				position: relative;
+				padding-bottom: 50px;
+				text-align: center;
+			}
+
+			.quiz_nav .progressbar li:before {
+				width: 1em;
+				content: '';
+				height: 1em;
+				line-height: 1em;
+				display: block;
+				position: absolute;
+				bottom: 0;
+				left: 50%;
+				-webkit-transform: translateX(-50%);
+				-ms-transform: translateX(-50%);
+				transform: translateX(-50%);
+				text-align: center;
+				color: #333;
+				background: white;
+				border: black .2em solid;
+				border-radius: 100%;
+			}
+
+			.quiz_nav .progressbar li:after {
+				content: '';
+				width: 100%;
+				height: .3em;
+				background: black;
+				position: absolute;
+				left: -50%;
+				bottom: .35em;
+				z-index: -1;
+				/*put it behind the numbers*/
+			}
+
+			.quiz_nav .progressbar li span {
+				position: absolute;
+				top: 0;
+				font-family: "HelveticaNeueW02-77BdCn_694069", Helvetica, sans-serif;
+				letter-spacing: 0.1em;
+				left: 50%;
+				-webkit-transform: translateX(-50%);
+				-ms-transform: translateX(-50%);
+				transform: translateX(-50%);
+			}
+
+			.quiz_nav .progressbar li:first-child:after {
+				content: none;
+			}
+
+			.quiz_nav .progressbar li.active:before {
+				background-color: black;
+			}
+
+			.radio-toolbar label {
+				display: inline-block;
+				background-color: white;
+				/* padding: 4px 11px; */
+				font-weight: bold;
+				padding: 3%;
+				width: 1em;
+				height: 1em;
+				/* font-size: 16px; */
+				color: black;
+				display: -webkit-inline-box;
+				display: -ms-inline-flexbox;
+				display: inline-flex;
+				margin: 1%;
+				/* flex-direction: row; */
+				-webkit-box-align: center;
+				-ms-flex-align: center;
+				align-items: center;
+				-webkit-box-pack: center;
+				-ms-flex-pack: center;
+				justify-content: center;
+				/* cursor: pointer; */
+				/* text-align: center; */
+				border: 1px solid black;
+				/* vertical-align: middle; */
+			}
+
+			.radio-toolbar input[type="radio"]:checked+label {
+				background-color: #bbb;
+			}
+
+			.radio-toolbar input[type="radio"] {
+				display: none;
+			}
+
+			#abc {
+				width: 100%;
+				height: 100%;
+				opacity: .95;
+				top: 0;
+				left: 0;
+				display: none;
+				position: fixed;
+				z-index: 2;
+				background-color: #313131;
+				overflow: auto;
+			}
+
+			.popupContact {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				-webkit-transform: translate(-50%, -50%);
+				-ms-transform: translate(-50%, -50%);
+				transform: translate(-50%, -50%);
+				width: 80%;
+			}
+
+			.popupContact #GetKit {
+				padding: 5%;
+				background-color: #fff;
+			}
+
+			.popupContact #GetKit h2 {
+				color: black;
+			}
+
+			.popupContact #GetKit h4 {
+				color: black;
+			}
+
+			.popupContact #GetKit #submit {
+				text-decoration: none;
+				width: 70%;
+				margin: 0 auto;
+				text-align: center;
+				display: block;
+				background-color: black;
+				color: #fff;
+			}
+
+			.popupContact #GetKit input[type=text] {
+				width: 82%;
+				padding: 10px;
+				margin-top: 30px;
+				border: 1px solid #ccc;
+				padding-left: 40px;
+				font-size: 16px;
+			}
+
+			.popupContact #GetKit .FA {
+				position: absolute;
+				right: 1%;
+				top: 1%;
+				font-size: 20px;
+				color: black;
+			}
+
+			hr {
+				margin: 0;
+				border: 0;
+				border-top: 1px solid black;
+			}
+
+			.FA {
+				font-family: FontAwesome;
+			}
+
+
+			@charset "UTF-8";
+			.o-carousel,
+			.o-carousel .owl-item {
+				-webkit-tap-highlight-color: transparent
+			}
+
+			.o-carousel .owl-nav [class*=owl-]:hover,
+			ul#menu li a {
+				text-decoration: none
+			}
+
+			@font-face {
+				font-family: HelvBold;
+				src: url(/ns/thenorthface/fonts/HelveticaNeue/HelveticaNeueLTW01-75Bold.woff2) format("woff2"), url(/ns/thenorthface/fonts/HelveticaNeue/HelveticaNeueLTW01-75Bold.woff) format("woff")
+			}
+
+			@font-face {
+				font-family: HelvMed;
+				src: url(/ns/thenorthface/fonts/HelveticaNeue/HelveticaNeueLTW01-65Medium.woff2) format("woff2"), url(/ns/thenorthface/fonts/HelveticaNeue/HelveticaNeueLTW01-65Medium.woff) format("woff")
+			}
+
+			@-webkit-keyframes bounce {
+				0%,
+				100%,
+				20%,
+				50%,
+				80% {
+					-webkit-transform: translateY(0);
+					transform: translateY(0)
+				}
+				40% {
+					-webkit-transform: translateY(-15px);
+					transform: translateY(-15px)
+				}
+				60% {
+					-webkit-transform: translateY(-7px);
+					transform: translateY(-7px)
+				}
+			}
+
+			@keyframes bounce {
+				0%,
+				100%,
+				20%,
+				50%,
+				80% {
+					-webkit-transform: translateY(0);
+					transform: translateY(0)
+				}
+				40% {
+					-webkit-transform: translateY(-15px);
+					transform: translateY(-15px)
+				}
+				60% {
+					-webkit-transform: translateY(-7px);
+					transform: translateY(-7px)
+				}
+			}
+
+			.bounce {
+				-webkit-animation: bounce 2s infinite;
+				animation: bounce 2s infinite
+			}
+
+			@-webkit-keyframes FadeIn {
+				0% {
+					opacity: 0;
+					-webkit-transform: translateX(25px);
+					transform: translateX(25px)
+				}
+				100% {
+					opacity: 1;
+					-webkit-transform: translateX(0);
+					transform: translateX(0)
+				}
+			}
+
+			@keyframes FadeIn {
+				0% {
+					opacity: 0;
+					-webkit-transform: translateX(25px);
+					transform: translateX(25px)
+				}
+				100% {
+					opacity: 1;
+					-webkit-transform: translateX(0);
+					transform: translateX(0)
+				}
+			}
+
+			@-webkit-keyframes FadeUpIn {
+				0% {
+					opacity: 0;
+					-webkit-transform: translateY(25px);
+					transform: translateY(25px)
+				}
+				100% {
+					opacity: 1;
+					-webkit-transform: translateY(0);
+					transform: translateY(0)
+				}
+			}
+
+			@keyframes FadeUpIn {
+				0% {
+					opacity: 0;
+					-webkit-transform: translateY(25px);
+					transform: translateY(25px)
+				}
+				100% {
+					opacity: 1;
+					-webkit-transform: translateY(0);
+					transform: translateY(0)
+				}
+			}
+
+			#body-container {
+				background-color: #FFF
+			}
+
+			.custom .image-overlay.media .overlay .wrapper {
+				padding: 0
+			}
+
+			.custom .button,
+			.custom .image-overlay.media .overlay .wrapper p {
+				margin: 0
+			}
+
+			@media only screen and (max-width:639px) {
+				.custom .media.image-overlay .overlay .wrapper .inner {
+					padding: 0
+				}
+			}
+
+			.custom .table {
+				display: table;
+				height: 100%;
+				width: 100%;
+				text-align: center
+			}
+
+			.custom .table>div {
+				display: table-cell;
+				width: 100%;
+				vertical-align: top;
+				padding-top: 10vw
+			}
+
+			.o-carousel .animated {
+				-webkit-animation-duration: 1s;
+				animation-duration: 1s;
+				-webkit-animation-fill-mode: both;
+				animation-fill-mode: both
+			}
+
+			.o-carousel .owl-animated-in {
+				z-index: 0
+			}
+
+			.o-carousel .owl-animated-out {
+				z-index: 1
+			}
+
+			.o-carousel .fadeOut {
+				-webkit-animation-name: fadeOut;
+				animation-name: fadeOut
+			}
+
+			@-webkit-keyframes fadeOut {
+				0% {
+					opacity: 1
+				}
+				100% {
+					opacity: 0
+				}
+			}
+
+			@keyframes fadeOut {
+				0% {
+					opacity: 1
+				}
+				100% {
+					opacity: 0
+				}
+			}
+
+			.owl-height {
+				-webkit-transition: height .5s ease-in-out;
+				transition: height .5s ease-in-out
+			}
+
+			.o-carousel {
+				display: none;
+				width: 100%;
+				position: relative;
+				z-index: 1
+			}
+
+			.o-carousel .owl-stage {
+				position: relative;
+				-ms-touch-action: pan-Y
+			}
+
+			.o-carousel .owl-stage:after {
+				content: ".";
+				display: block;
+				clear: both;
+				visibility: hidden;
+				line-height: 0;
+				height: 0
+			}
+
+			.o-carousel .owl-stage-outer {
+				position: relative;
+				overflow: hidden;
+				-webkit-transform: translate3d(0, 0, 0)
+			}
+
+			.o-carousel .owl-controls .owl-dot,
+			.o-carousel .owl-controls .owl-nav .owl-next,
+			.o-carousel .owl-controls .owl-nav .owl-prev {
+				cursor: pointer;
+				cursor: hand;
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none
+			}
+
+			.o-carousel.owl-loaded {
+				display: block
+			}
+
+			.o-carousel.owl-loading {
+				opacity: 0;
+				display: block
+			}
+
+			.o-carousel.owl-hidden {
+				opacity: 0
+			}
+
+			.o-carousel .owl-refresh .owl-item {
+				display: none
+			}
+
+			.o-carousel .owl-item {
+				position: relative;
+				min-height: 1px;
+				float: left;
+				-webkit-backface-visibility: hidden;
+				-webkit-touch-callout: none;
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none
+			}
+
+			.o-carousel .owl-item img {
+				display: block;
+				width: 100%;
+				-webkit-transform-style: preserve-3d;
+				transform-style: preserve-3d
+			}
+
+			.o-carousel.owl-text-select-on .owl-item {
+				-webkit-user-select: auto;
+				-moz-user-select: auto;
+				-ms-user-select: auto;
+				user-select: auto
+			}
+
+			.o-carousel .owl-grab {
+				cursor: move;
+				cursor: -webkit-grab;
+				cursor: -o-grab;
+				cursor: -ms-grab;
+				cursor: grab
+			}
+
+			.o-carousel.owl-rtl {
+				direction: rtl
+			}
+
+			.o-carousel.owl-rtl .owl-item {
+				float: right
+			}
+
+			.no-js .o-carousel {
+				display: block
+			}
+
+			.o-carousel .owl-item .owl-lazy {
+				opacity: 0;
+				-webkit-transition: opacity .4s ease;
+				transition: opacity .4s ease
+			}
+
+			.o-carousel .owl-video-wrapper {
+				position: relative;
+				height: 100%;
+				background: #000
+			}
+
+			.o-carousel .owl-video-play-icon {
+				position: absolute;
+				height: 80px;
+				width: 80px;
+				left: 50%;
+				top: 50%;
+				margin-left: -40px;
+				margin-top: -40px;
+				background: url(owl.video.play.png) no-repeat;
+				cursor: pointer;
+				z-index: 1;
+				-webkit-backface-visibility: hidden;
+				-webkit-transition: scale .1s ease;
+				transition: scale .1s ease
+			}
+
+			.o-carousel .owl-nav,
+			.o-carousel .owl-nav.disabled+.owl-dots {
+				margin-top: 10px
+			}
+
+			.o-carousel .owl-video-play-icon:hover {
+				-webkit-transition: scale(1.3, 1.3);
+				transition: scale(1.3, 1.3)
+			}
+
+			.o-carousel .owl-video-playing .owl-video-play-icon,
+			.o-carousel .owl-video-playing .owl-video-tn {
+				display: none
+			}
+
+			.o-carousel .owl-video-tn {
+				opacity: 0;
+				height: 100%;
+				background-position: center center;
+				background-repeat: no-repeat;
+				background-size: contain;
+				-webkit-transition: opacity .4s ease;
+				transition: opacity .4s ease
+			}
+
+			.o-carousel .owl-video-frame {
+				position: relative;
+				z-index: 1
+			}
+
+			.o-carousel .owl-dots,
+			.o-carousel .owl-nav {
+				text-align: center;
+				-webkit-tap-highlight-color: transparent
+			}
+
+			.o-carousel .owl-nav [class*=owl-] {
+				color: #FFF;
+				font-size: 14px;
+				padding: 4px 7px;
+				display: inline-block;
+				cursor: pointer
+			}
+
+			.o-carousel .owl-nav.disabled {
+				display: none;
+				opacity: .5;
+				cursor: default
+			}
+
+			.o-carousel .owl-dots .owl-dot {
+				display: inline-block;
+				zoom: 1
+			}
+
+			.o-carousel .owl-dots .owl-dot span {
+				width: 10px;
+				height: 10px;
+				margin: 5px 7px;
+				background: #D6D6D6;
+				display: block;
+				-webkit-backface-visibility: visible;
+				-webkit-transition: opacity .2s ease;
+				transition: opacity .2s ease;
+				border-radius: 30px
+			}
+
+			.o-carousel .owl-dots .owl-dot.active span,
+			.o-carousel .owl-dots .owl-dot:hover span {
+				background: #666
+			}
+
+			.o-carousel .owl-nav [class*=owl-] {
+				position: absolute;
+				top: 0;
+				height: 100%;
+				background: rgba(255, 255, 255, .2);
+				width: 5vw;
+				border-radius: 0;
+				content: "&#8250;";
+				margin: 0
+			}
+
+			.o-carousel .owl-nav .owl-next {
+				right: 0;
+				background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0, #fff 100%);
+				background: linear-gradient(to right, rgba(255, 255, 255, 0) 0, #fff 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff', GradientType=1)
+			}
+
+			.owl-nav .owl-next,
+			.owl-nav .owl-prev {
+				color: rgba(255, 255, 255, 0)
+			}
+
+			.o-carousel .owl-nav .owl-next::before {
+				position: absolute;
+				top: 34%;
+				left: 0;
+				content: url(https://images.thenorthface.com/is/image/TheNorthFaceBrand/arrow_right_black?fmt=png-alpha)
+			}
+
+			.o-carousel .owl-nav .owl-prev::before {
+				position: absolute;
+				top: 34%;
+				content: url(https://images.thenorthface.com/is/image/TheNorthFaceBrand/arrow_left_black?fmt=png-alpha)
+			}
+
+			.o-carousel .owl-nav .owl-prev {
+				left: 0;
+				background: -webkit-linear-gradient(left, #fff 0, rgba(255, 255, 255, 0) 100%);
+				background: linear-gradient(to right, #fff 0, rgba(255, 255, 255, 0) 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff', GradientType=1)
+			}
+
+			.row.photo-info {
+				display: none;
+				position: absolute;
+				left: 0;
+				right: 0;
+				text-align: right;
+				max-width: 100%;
+				margin-right: 3rem
+			}
+
+			.row.photo-info h5 {
+				font-family: HelvBold, Helvetica, sans-serif;
+				color: #fff;
+				font-weight: 700;
+				display: inline-block;
+				font-size: .9rem;
+				line-height: 1.3;
+				letter-spacing: .1em
+			}
+
+			.custom .hero h1,
+			.custom__intro .row h2,
+			.custom__intro h3,
+			.row.photo-info h5:last-of-type {
+				font-family: HelveticaNeueW02-55Roma, Helvetica, sans-serif
+			}
+
+			.row.photo-info h5 span {
+				font-weight: 400
+			}
+
+			.row.photo-info h5:last-of-type {
+				font-size: .9rem
+			}
+
+			.row.photo-info p {
+				margin: 0
+			}
+
+			.custom__carousel {
+				padding-bottom: 3rem
+			}
+
+			@media (min-width:640px) {
+				.custom__carousel {
+					padding: 2rem 0 5rem
+				}
+
+			}
+
+			@media (min-width:1024px) {
+				.custom__carousel {
+					padding: 5em;
+				}
+				.custom__carousel .custom .o-carousel .owl-nav.disabled+.owl-dots {
+					margin-top: 2rem
+				}
+			}
+
+			.custom .o-carousel .owl-nav.disabled+.owl-dots {
+				margin-top: 0
+			}
+
+			.custom .product.teaser .info h5 {
+				font-size: 1.1rem
+			}
+
+			.custom .o-carousel .owl-nav {
+				margin-top: 20px
+			}
+
+			.custom .o-carousel .owl-nav .owl-next,
+			.custom .o-carousel .owl-nav .owl-prev {
+				background: transparent;
+				width: 7vw
+			}
+
+			.custom .o-carousel .owl-nav .owl-prev::before {
+				-webkit-transition: all .4s;
+				transition: all .4s;
+				right: 50%;
+				opacity: 0
+			}
+
+			.custom .o-carousel .owl-nav .owl-next::before {
+				-webkit-transition: all .4s;
+				transition: all .4s;
+				left: 50%;
+				opacity: 0
+			}
+
+			.custom .o-carousel:hover .owl-nav .owl-prev::before {
+				right: 25%;
+				opacity: 1
+			}
+
+			.custom .o-carousel:hover .owl-nav .owl-next::before {
+				left: 25%;
+				opacity: 1
+			}
+
+			h3 {
+				font-family: HelveticaNeueW02-55Roma, Helvetica, sans-serif;
+				line-height: 1;
+				font-size: 1.8em;
+				letter-spacing: .03rem;
+				padding-bottom: .5em
+			}
+
+			@media (min-width:1024px) {
+				.custom .o-carousel .owl-nav.disabled+.owl-dots {
+					margin-top: 2.5rem
+				}
+				h3 {
+					font-size: 2.3rem;
+					letter-spacing: .1rem
+				}
+			}
+
+			.custom sup {
+				font-size: 55%;
+				line-height: 0;
+				position: static;
+				vertical-align: super
+			}
+
+			.hero__header {
+				text-align: center;
+				margin-bottom: 2.4em
+			}
+
+			.hero__header__logo--small {
+				width: 80%;
+				margin: 0 auto;
+				height: 100%
+			}
+
+			.product.teaser .info .price {
+				display: none
+			}
+
+			.button.open-dialog-js {
+				display: none!important
+			}
+
+			.cp {
+				margin: 1.5rem 0 3.8rem 3rem
+			}
+
+			@media (max-width:1023px) and (min-width:640px) {
+				.cp {
+					display: table;
+					height: 100%;
+					padding: 2em
+				}
+				.cp>div {
+					display: table-cell;
+					vertical-align: middle
+				}
+			}
+
+			.custom__content__b .cp {
+				margin: 2rem auto 3rem
+			}
+
+			.custom__content__b>div>.row:nth-child(1) {
+				padding-top: 1rem
+			}
+
+			@media (min-width:1024px) {
+				.ls-image {
+					margin-bottom: 57px
+				}
+				.custom__content__b>div>.row:nth-child(1) {
+					border-top: 2px solid #ccc;
+					padding-top: 4rem
+				}
+				.custom__content__b h3:after {
+					height: 20px
+				}
+			}
+
+			.custom__content__b .ls-image {
+				margin-bottom: 1.6rem
+			}
+
+			@media screen and (max-width:639px) {
+				.hero__header h1 {
+					font-style: 9.59375vw;
+					letter-spacing: .02em
+				}
+				.product.teaser .info {
+					width: 160px;
+					margin: 0 auto 3rem
+				}
+			}
+
+			.o-carousel article.teaser {
+				padding-bottom: 0
+			}
+
+			@media screen and (max-width:1023px) and (min-width:640px) {
+				.custom__content .cp {
+					height: 47vw;
+					margin: 0 auto 3rem
+				}
+			}
+
+			@media screen and (min-width:640px) {
+				.custom__content>section {
+					padding-bottom: 2rem
+				}
+				.hero__header {
+					text-align: left
+				}
+				.hero__header__txt {
+					max-width: 700px
+				}
+				.hero__header h1 span {
+					display: inline
+				}
+				.product.teaser .info {
+					text-align: center;
+					width: 180px;
+					margin: 0 auto
+				}
+				.custom__intro span {
+					font-size: 1.2rem
+				}
+				.w-col1 article {
+					padding-bottom: 0
+				}
+				.m-col1 article {
+					padding-bottom: 1rem
+				}
+				.m-col1 .product.teaser .info {
+					margin-top: -.5rem
+				}
+				.w-col1 .product.teaser {
+					padding-bottom: 0
+				}
+				.w-col1 {
+					margin-top: -1em
+				}
+				.w-col1 .product.teaser .info {
+					margin-top: -.9rem
+				}
+			}
+
+			@keyframes pulse {
+				0% {
+					-webkit-transform: scale(0);
+					transform: scale(0);
+					opacity: 0
+				}
+				50% {
+					-webkit-transform: scale(1);
+					transform: scale(1);
+					opacity: .5
+				}
+				100% {
+					-webkit-transform: scale(2);
+					transform: scale(2);
+					opacity: 0
+				}
+			}
+
+			.custom .pulse-dot {
+				background: #45453f;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				z-index: 10;
+			}
+
+			.custom .pulse {
+				width: 10px;
+				height: 10px;
+				border: 12px solid #fff;
+				cursor: pointer;
+				border-radius: 24px;
+				background-color: #716f42;
+				z-index: 10;
+				position: absolute;
+				-webkit-transition: opacity .4s;
+				transition: opacity .4s
+			}
+
+			.custom .pulse:hover {
+				opacity: .7
+			}
+
+			.custom .pulse:active {
+				opacity: 1
+			}
+
+			.custom .dot {
+				border: 10px solid #a4bfef;
+				background: 0 0;
+				border-radius: 25px;
+				height: 50px;
+				width: 50px;
+				-webkit-animation: pulse 2s ease-out;
+				animation: pulse 2s ease-out;
+				-webkit-animation-iteration-count: infinite;
+				animation-iteration-count: infinite;
+				position: absolute;
+				top: -13px;
+				left: -13px;
+				z-index: 1;
+				opacity: 0
+			}
+
+			.custom [data-dpulse=backpack] {
+				left: 71.5%;
+				top: 53%
+			}
+
+			.custom [data-dpulse=bag] {
+				left: 64%;
+				top: 80%
+			}
+
+			.custom [data-dpulse=tent] {
+				left: 30%;
+				top: 15%
+			}
+
+			.custom #tibetanorange [data-dpulse=backpack] {
+				left: 74.5%;
+				top: 52%
+			}
+
+			.custom #tibetanorange [data-dpulse=tent] {
+				left: 30%;
+				top: 19%
+			}
+
+			.custom #tibetanorange [data-dpulse=bag] {
+				left: 18%;
+				top: 76%
+			}
+
+			@media (max-width:1023px) {
+				.custom #tibetanorange [data-dpulse=bag] {
+					display: none
+				}
+			}
+
+			.custom #yosemitesofa [data-dpulse=bag] {
+				left: 56%;
+				top: 75%
+			}
+
+			.custom #yosemitesofa [data-dpulse=backpack] {
+				left: 73%;
+				top: 43%
+			}
+
+			.custom #vintagewhite [data-dpulse=backpack] {
+				left: 72%;
+				top: 52.5%
+			}
+
+			body {
+				background: #fff
+			}
+
+			.custom h1,
+			.custom h2 {
+				font-family: HelvMed;
+				letter-spacing: .05em
+			}
+
+			.custom a {
+				font-family: HelvMed
+			}
+
+			.custom p {
+				font-size: 1.1rem
+			}
+
+			.hero__img {
+				background: url(https://images.thenorthface.com/is/image/TheNorthFaceBrand/051517_featured-Homestead-Hero-m?wid=640) center center no-repeat;
+				background-size: cover
+			}
+
+			@media screen and (min-width:640px) {
+				.hero__img {
+					background: url(https://images.thenorthface.com/is/image/TheNorthFaceBrand/051517_featured-Homestead-Hero-t?wid=1024) top center no-repeat;
+					background-size: cover
+				}
+			}
+
+			@media screen and (min-width:1024px) {
+				.hero__img {
+					background: url(https://images.thenorthface.com/is/image/TheNorthFaceBrand/051517_featured-Homestead-Hero-d?wid=1920&qlt=60) top center no-repeat;
+					background-size: cover
+				}
+			}
+
+			.custom .hero {
+				color: #000
+			}
+
+			.custom .hero h1,
+			.custom .hero h2 {
+				color: #fff
+			}
+
+			.custom .hero h2 {
+				font-size: 1rem
+			}
+
+			@media only screen and (min-width:640px) {
+				.custom .hero {
+					text-align: center;
+					color: #fff
+				}
+				.custom .hero h1 {
+					line-height: .95
+				}
+				.custom .hero h2 {
+					font-size: 1.15rem
+				}
+			}
+		</style>
+		<script type="text/javascript">
+
+				domReady(function() {
+
+					var show_down = $('.show_down');
+					show_down.click(function(e) {
+
+						e.preventDefault();
+						$('html, body').animate({
+							scrollTop: $("#my_products").offset().top
+						}, 500);
+
+						setTimeout(removeActive, 1000);
+					});
+
+					function check_empty() {
+						if (document.getElementById('name').value == "" || document.getElementById('email').value == "" || document.getElementById('msg').value == "") {
+							alert("Fill All Fields !");
+						} else {
+							document.getElementById('GetKit').submit();
+							alert("Form Submitted Successfully...");
+						}
+					}
+					//Function To Display Popup
+					function div_show() {
+						document.getElementById('abc').style.display = "block";
+					}
+					//Function to Hide Popup
+					function div_hide() {
+						document.getElementById('abc').style.display = "none";
+					}
+
+
+					function sendMail() {
+						$("#GetKit").attr("action", 'mailto:kellylinehan2@gmail.com?subject= Get your ' + quiztype + ' kit');
+
+					}
+
+
+					var arrowdown = $('.arrow_down');
+					var change = $('.onchange');
+
+					var quiz = $("#quiz-wrapper");
+
+
+					arrowdown.click(function() {
+						change.addClass('active');
+						quiz.addClass('start');
+						change.one('webkitAnimationEnd oanimationend msAnimationEnd animationend',
+
+							function(e) {
+								e.preventDefault();
+								$('html, body').animate({
+									scrollTop: $("#quiz-wrapper").offset().top
+								}, 500);
+
+								setTimeout(removeActive, 1000);
+							});
+					});
+
+
+
+					$('.quiz-step').each(function() {
+						var $step = $(this);
+						// for each step, add click listener
+						// apply current active class
+						removeActive();
+
+						$step.find('.quiz-answer').click(function() {
+							var $this = $(this);
+							// check to see if an answer was previously selected
+							if ($step.children('.active').length > 0) {
+								var wasActive = $step.children('.active');
+								$step.children('.active').removeClass('active');
+								// $bar.removeClass('active');
+								$this.addClass('active');
+
+
+								// $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
+
+							} else {
+								$this.addClass('active');
+
+								updateStep($step);
+								showresult();
+							}
+						});
+					});
+
+					// show current step/hide other steps
+					function updateStep(n) {
+						if (n.hasClass('current')) {
+							$('current').fadeOut();
+							//  $bar.removeClass('active');
+							//  $bar.next().addClass('active');
+							n.removeClass('current');
+							// $bar.removeClass('active');
+
+							n.next().addClass('current');
+							$('current').fadeIn();
+							$('.active').removeClass('active').next('li').addClass('active');
+							console.log('Transition complete!  This is the callback, no library needed!');
+						}
+					}
+
+					function showresult() {
+						$("#showresult").click(function() {
+							var $href = $(this).attr("href");
+							// $('html, body').animate({
+							// 	scrollTop: $($(this).attr('href')).offset().top}, 400, 'linear');
+							if ($href == "#fuse") {
+								$("#fuse").addClass('current');
+
+							}
+							if ($href == "#purist") {
+								$("#purist").addClass('current');
+
+							}
+
+						});
+					}
+
+
+					grading = [{
+							score: 'purist',
+							quiztype: "PURIST TRICLIMATE",
+							image: "https://images.thenorthface.com/is/image/TheNorthFaceBrand/M%5FTriclimate%5F%20Outfit%5FGroup?$natural%2Djpg$",
+							href: "#purist",
+							copy: "If part of the joy of skiing and riding is going down, the other joyful part for you is charging up. You love nothing more than a cup of coffee followed by a sweaty dawn patrol skin up the face of your local front range, or working your way out to a remote hut for an epic weekend adventure. You love the simplicity of the sport and probably drive a Subaru with an old REI bag floating around the backseat. This kit will allow you to vent when the climbing gets warm, but layer up when it’s time to cruise down, without so much as taking off your pack."
+						},
+
+
+						{
+							score: 'fuse',
+							quiztype: "FUSE BRIGANDINE ",
+							image: "https://images.thenorthface.com/is/image/TheNorthFaceBrand/M%5FBrigandine%5FOutfit%5FGroup?$natural%2Djpg$",
+							href: "#fuse",
+							copy: "You’re a Red Bull-chugging, cliff-hucking, adrenaline-seeking maniac who wants the rush of the gnarliest line you can get your sticks or board on. This kit is articulated specifically to crush those hard lines and allow you to speak clearly into your collar with a semi-gripped, “3, 2, 1, dropping…” call to the heli when you’re charging new terrain. Featuring a new FuseForm™/GORE-TEX® fabrication and an ergonomic fit, this kit was designed to keep you warm and help you keep your cool when facing some of the most demanding topography on the planet. "
+						}
+
+
+
+
+					];
+
+					function removeActive() {
+						change.removeClass('active');
+					}
+
+					var answers = {
+						'fuse': 0,
+						'purist': 0,
+					};
+					var quiztype;
+					$('button')
+						.on('click', function() {
+							var $el = $(this),
+								answer = $el.data('answer');
+
+							answers[answer]++;
+
+							var results = getMostAnswered();
+							// resultsTitle.replaceWith("<h1>" + resultOptions[n].title + "</h1>");
+							//                 resultsDesc.replaceWith("<p class='desc'>" + resultOptions[n].desc + "</p>");
+							for (i = 0; i < grading.length; i++) {
+								if (results == grading[i].score) {
+									quiztype = grading[i].quiztype;
+									resultIMG = "<img src='" + grading[i].image + "'/>";
+									resultCOPY = grading[i].copy;
+									result3 = grading[i].href;
+									document.getElementById("result").innerHTML = quiztype;
+									document.getElementById("myresult").innerHTML = quiztype;
+									document.getElementById("resultCopy").innerHTML = resultCOPY;
+									document.getElementById("resultIMG").innerHTML = resultIMG;
+									document.getElementById("quiz_type_choice").value = quiztype;
+
+
+								}
+							}
+							// document.getElementById("result").innerHTML = results;
+							if (result3 == "#fuse") {
+								$(".fuse_products").addClass('current');
+								$(".purist_products").removeClass('current');
+
+							}
+							if (result3 == "#purist") {
+								$(".purist_products").addClass('current');
+								$(".fuse_products").removeClass('current');
+
+							}
+						});
+
+
+					function getMostAnswered() {
+						// here we convert the object to an array we can use
+						var theAnswers = Object.keys(answers).map(function(key) {
+							var answer = {
+								count: answers[key],
+								key: key,
+							};
+
+							return answer;
+						});
+
+						// set some vars with -1 so we can do a good comparison
+						var currentMax = -1;
+						var currentIndex = -1;
+
+						// loop thru answers
+						theAnswers.forEach(function(answer, index) {
+							if (answer.count > currentMax) {
+								currentMax = answer.count;
+								currentIndex = index;
+							}
+						});
+
+						return theAnswers[currentIndex].key;
+					}
+
+				});
+			
+
+		</script>
+		<!-- START garnish wrap open -->
+		<div class="garnish-wrapper">
+			<div class="garnish-full-width top-pad-0x0 bottom-pad-0x0 top-margin-0x0 bottom-margin-0x0
+
+				" style="">
+				<!-- END garnish wrap open -->
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+				<header id="section01" class="arrow_wrap">
+					<div class="background-wrapper">
+						<img src="https://images.thenorthface.com/is/image/TheNorthFaceBrand/Mission%5FKit%5Fhero%5Fimage?$SCALE%2DORIGINAL$"></div>
+					<div class="upper onchange">
+						<img class="logo" src="http://s7d1.scene7.com/is/image/TheNorthFaceBrand/TNF%20logo%20white%2D1?$transparent%2Dpng$">
+						<!-- <h1 class="gp-light">THE<span class="gp-bold"> MISSION </span>KIT</h1>
+      <h2 class="heading6 gp-light">GEAR FOR THE OUTER LIMITS</h2> -->
+						<br>
+						<img class="missionkit" src="https://www.atrio.it/TheNorthFace/imgs/steep_series/txt/the_mission_kit.svg">
+						<br>
+						<img class="plus" src="https://images.thenorthface.com/is/content/TheNorthFaceBrand/plus">
+					</div>
+					<div class="bottom onchange">
+						<h3 class="heading5">Temps are dropping. TGR movies have been consumed. Your toes are itching to be cramped into boots. It’s that magical time of year. And you’re ready.
+<br>
+But your kit? It’s beat up. Well-loved from the epic days of last season, but in no shape to take you to May 2018.
+<br>
+Luckily for you, The North Face Steep Series™ line received a complete overhaul in Fall 2017. Re-built from the ground up, our designers focused on the essentials athletes need for winter. The result? Eight unique, immaculately crafted pieces designed to work as one. We call it our Mission Kit.
+<br>
+<br>
+<p class="heading3">SO, WHICH KIT CALLS TO YOU?
+</p>
+</h3></div>
+					<div class="arrow_down"><span class="fa-angle-down"></span></div>
+				</header>
+				<div id="quiz-wrapper">
+					<div class="quiz_nav">
+						<img class="steeplogo" src="http://s7d1.scene7.com/is/image/TheNorthFaceBrand/SteepSeriesLogo?$transparent%2Dpng$">
+						<ul class="progressbar">
+							<li class="step"><span>START</span></li>
+							<li class="step active"><span>01</span></li>
+							<li class="step"><span>02</span></li>
+							<li class="step"><span>03</span></li>
+							<li class="step"><span>04</span></li>
+							<li class="step"><span>05</span></li>
+							<li class="step"><span>RESULTS</span></li>
+						</ul>
+						<img class="tnflogo" src="https://images.thenorthface.com/is/image/TheNorthFaceBrand/TNF%20logo%20black?$transparent%2Dpng$">
+					</div>
+					<div id="quizzie">
+						<ul class="quiz-step step1 current">
+							<li class="question">
+								<div class="question-wrap">
+									<h1>WHERE ARE YOU SKIING/RIDING THIS SEASON?</h1>
+								</div>
+							</li>
+							<div class="awnser_row">
+								<button id="answer1" class="quiz-answer" data-answer="fuse" type="button">
+<img src="https://images.thenorthface.com/is/image/TheNorthFaceBrand/3?$SCALE%2DORIGINAL$"> <br> Rippin' laps at a resort
+</button>
+								<button id="answer2" class="quiz-answer" data-answer="purist" type="button">
+<img src="https://images.thenorthface.com/is/image/TheNorthFaceBrand/2?$SCALE%2DORIGINAL$"> <br>Exploring the backcountry</button>
+								<button id="answer3" class="quiz-answer" data-answer="fuse" type="button">
+<img src="https://images.thenorthface.com/is/image/TheNorthFaceBrand/1?$SCALE%2DORIGINAL$" style="object-position: 50% 15%;"> <br>Dropping out onto steep lines</button>
+							</div>
+						</ul>
+						<ul class="quiz-step step2">
+							<li class="question">
+								<div class="question-wrap">
+									<h1>YOUR IDEAL CONDITIONS FOR A BIG DAY...</h1>
+								</div>
+							</li>
+							<div class="awnser_row">
+								<button id="answer1" class="quiz-answer" data-answer="purist" type="button">
+<img src="https://images.thenorthface.com/is/image/TheNorthFaceBrand/4?$SCALE%2DORIGINAL$" style="object-position: 50% 20%;"> <br> Frigid with bluebird skies
+</button>
+								<button id="answer2" class="quiz-answer" data-answer="fuse" type="button">
+<img src="https://images.thenorthface.com/is/image/TheNorthFaceBrand/5?$SCALE%2DORIGINAL$"> <br>Dumping so hard it's hard to see</button>
+								<button id="answer3" class="quiz-answer" data-answer="purist" type="button">
+<img src="https://images.thenorthface.com/is/image/TheNorthFaceBrand/6?$SCALE%2DORIGINAL$"> <br>Warm enough to ski in jorts</button>
+							</div>
+						</ul>
+						<ul class="quiz-step step3">
+							<li class="question">
+								<div class="question-wrap">
+									<h1>YOUR PRO ATHLETE SPIRIT ANIMAL IS… </h1>
+								</div>
+							</li>
+							<div class="awnser_row">
+								<button id="answer1" class="quiz-answer face" data-answer="fuse" type="button">
+<img src="https://images.thenorthface.com/is/image/TheNorthFaceBrand/7?$SCALE%2DORIGINAL$"> <br> Johnny Collinson<br><span class="changename">Renaissance renegade</span><br>
+</button>
+								<button id="answer2" class="quiz-answer face" data-answer="purist" type="button">
+<img src="https://images.thenorthface.com/is/image/TheNorthFaceBrand/8?$SCALE%2DORIGINAL$"> <br>Devin Logan <br><span class="changename">Humble champion</span>
+</button>
+								<button id="answer3" class="quiz-answer face" data-answer="fuse" type="button">
+<img src="https://images.thenorthface.com/is/image/TheNorthFaceBrand/9?$SCALE%2DORIGINAL$"> <br>Blake Paul <br><span class="changename">Backcountry badass </span></button>
+							</div>
+						</ul>
+						<ul class="quiz-step step4">
+							<li class="question">
+								<div class="question-wrap">
+									<h1>What's your go-to <br> après beverage? </h1>
+								</div>
+							</li>
+							<div class="awnser_row">
+								<button id="answer1" class="quiz-answer" data-answer="fuse" type="button">
+<img src="https://images.thenorthface.com/is/image/TheNorthFaceBrand/10?$SCALE%2DORIGINAL$"> <br> Brewski
+</button>
+								<button id="answer2" class="quiz-answer" data-answer="purist" type="button">
+<img src="https://images.thenorthface.com/is/image/TheNorthFaceBrand/11?$SCALE%2DORIGINAL$"> <br>Cocktail</button>
+								<button id="answer3" class="quiz-answer" data-answer="fuse" type="button">
+<img src="https://images.thenorthface.com/is/image/TheNorthFaceBrand/12?$SCALE%2DORIGINAL$"> <br>Shot Ski</button>
+							</div>
+						</ul>
+						<ul class="quiz-step step5">
+							<li class="question">
+								<div class="question-wrap">
+									<h1> WHAT'S YOUR DREAM SKI/SNOWBOARD GETAWAY?</h1>
+								</div>
+							</li>
+							<div class="awnser_row">
+								<button id="answer1" class="quiz-answer" data-answer="purist" type="button">
+<img src="https://images.thenorthface.com/is/image/TheNorthFaceBrand/13?$SCALE%2DORIGINAL$"> <br>Hokkaido, Japan: Pow all day
+</button>
+								<button id="answer2" class="quiz-answer" data-answer="fuse" type="button">
+<img src="https://images.thenorthface.com/is/image/TheNorthFaceBrand/14?$SCALE%2DORIGINAL$"> <br> Haines, AK: Get to the Choppa'! </button>
+								<button id="answer3" class="quiz-answer" data-answer="fuse" type="button">
+<img src="https://images.thenorthface.com/is/image/TheNorthFaceBrand/15?$SCALE%2DORIGINAL$"> <br> Breckenridge, CO: Park and Pipe</button>
+							</div>
+						</ul>
+						<ul id="results" class="results">
+							<li class="results-inner">
+								<script>
+									var sendMail;
+									var quiztype;
+
+									function div_show() {
+										document.getElementById('abc').style.display = "block";
+									}
+
+									function div_hide() {
+										document.getElementById('abc').style.display = "none";
+									}
+
+									require(['jquery', 'domReady'], function($, domReady) {
+										domReady(function() {
+
+
+										});
+									});
+								</script>
+								<div id="abc">
+									<div class="popupContact">
+										<!-- Contact Us Form -->
+										<form action="mailto:Jennifer_Davis@vfc.com?subject=My Quiz Results" id="GetKit" method="post" name="form" enctype="text/plain">
+											<div class="FA" id="close" onclick="div_hide()"> <i class="fa fa-times-circle" aria-hidden="true"></i></div>
+											<h1>Your <span id="myresult"></span> Quiz</h1>
+											<hr>
+											<input type="hidden" id="quiz_type_choice" name="Quiz Type" value="">
+											<input id="name" name="name" placeholder="Name" type="text">
+											<input id="email" name="Address" placeholder="Address" type="text">
+											<h4> Select a Size</h4>
+											<div class="radio-toolbar">
+												<input type="radio" id="XS" name="size" value="XS" checked="">
+												<label for="XS">XS</label>
+												<input type="radio" id="S" name="size" value="S">
+												<label for="S">S</label>
+												<input type="radio" id="M" name="size" value="M">
+												<label for="M">M</label>
+												<input type="radio" id="L" name="size" value="L" checked="">
+												<label for="XS">L</label>
+												<input type="radio" id="XL" name="size" value="XL">
+												<label for="S">XL</label>
+											</div>
+											<br>
+											<button type="submit" value="Send" id="submit">Get Kit</button>
+										</form>
+									</div>
+									<!-- Popup Div Ends Here -->
+								</div>
+								<h1>YOUR MISSION KIT IS: <span id="result"></span></h1>
+								<p id="resultCopy"></p>
+								<div id="resultIMG"></div>
+								<h3> WHAT'S IN YOUR KIT</h3>
+								<div class="show_down"><span class="fa-angle-down"></span></div>
+							</li>
+							<div class="custom" id="my_products">
+								<section class="custom__content">
+									<article class="custom__content__a fuse_products" id="tibetanorange">
+										<!-- mobile -->
+										<div class="">
+											<div class="custom__carousel" data-carousel="mobile">
+												<div class="o-carousel owl-loaded owl-drag" id="carousel0">
+													<div class="owl-stage-outer">
+														<div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: 0s;">
+															<div class="owl-item">
+																<article class="product teaser" itemscope="" itemtype="http://schema.org/Product">
+																	<div class="view">
+																		<a href="https://www.thenorthface.com/shop/mens-fuse-brigandine-jacket-nf0a332k?variationId=SEM">
+																			<picture class=" ratio-square">
+																				<!--[if IE 9]><video style="display: none;"><![endif]-->
+																				<source srcset="https://images.thenorthface.com/is/image/TheNorthFace/NF0A332K_QFY_hero?$CATEGORY-LANDING-PRODUCT-REC$" media="(min-width: 1024px)">
+																				<source srcset="https://images.thenorthface.com/is/image/TheNorthFace/NF0A332K_QFY_hero?$CATEGORY-LANDING-PRODUCT-REC$" media="(min-width: 640px)">
+																				<!--[if IE 9]></video><![endif]-->
+																				<img srcset="https://images.thenorthface.com/is/image/TheNorthFace/NF0A332K_QFY_hero?$CATEGORY-LANDING-PRODUCT-REC-MOBILE$" alt="MEN'S FUSE BRIGANDINE JACKET">
+																			</picture>
+																		</a>
+																		<meta itemprop="image" content="https://images.thenorthface.com/is/image/TheNorthFace/NF0A332K_QFY_hero?$CATEGORY-LANDING-PRODUCT-REC$">
+																		<span class="button open-dialog-js" data-reveal-id="modal" data-reveal-ajax="//www.thenorthface.com/webapp/wcs/stores/servlet/VFQuickViewDisplay?urlLangId=-1&amp;langId=-1&amp;productId=621344&amp;catalogId=20001&amp;storeId=7001&amp;variationId=QFY">Quick Shop</span>
+																	</div>
+																	<a href="https://www.thenorthface.com/shop/mens-fuse-brigandine-jacket-nf0a332k?variationId=SEM">
+																		<div class="info">
+																			<div class="swatches">
+																				<div class="swatch colors-1">
+																					<span class="name">VAPOROUS GREY FUSE</span>
+																					<span class="color" style="background-color: #DFDED8"></span>
+																				</div>
+																				<div class="swatch colors-1">
+																					<span class="name">MILITARY OLIVE FUSE</span>
+																					<span class="color" style="background-color: #62553A"></span>
+																				</div>
+																				<div class="swatch colors-1">
+																					<span class="name">INAUGURATION BLUE FUSE</span>
+																					<span class="color" style="background-color: #363B7B"></span>
+																				</div>
+																				<div class="swatch colors-1">
+																					<span class="name">ZINNIA ORANGE FUSE</span>
+																					<span class="color" style="background-color: #FEA00F"></span>
+																				</div>
+																			</div>
+																			<h5><span itemprop="name">MEN'S FUSE BRIGANDINE JACKET</span></h5>
+																			<div class="price">
+																				<span>$699.00</span>
+																			</div>
+																		</div>
+																	</a>
+																	<meta itemprop="brand" content="thenorthface">
+																	<meta itemprop="description" content="Men's Fuse Brigandine Jacket">
+																	<meta itemprop="sku" content="NF0A332K">
+																</article>
+															</div>
+															<div class="owl-item">
+																<article class="product teaser" itemscope="" itemtype="http://schema.org/Product">
+																	<div class="view">
+																		<a href="https://www.thenorthface.com/shop/mens-fuse-brigandine-bib-nf0a333b?variationId=SEM">
+																			<picture class=" ratio-square">
+																				<!--[if IE 9]><video style="display: none;"><![endif]-->
+																				<source srcset="https://images.thenorthface.com/is/image/TheNorthFace/NF0A333B_YCD_hero?$CATEGORY-LANDING-PRODUCT-REC$" media="(min-width: 1024px)">
+																				<source srcset="https://images.thenorthface.com/is/image/TheNorthFace/NF0A333B_YCD_hero?$CATEGORY-LANDING-PRODUCT-REC$" media="(min-width: 640px)">
+																				<!--[if IE 9]></video><![endif]-->
+																				<img srcset="https://images.thenorthface.com/is/image/TheNorthFace/NF0A333B_YCD_hero?$CATEGORY-LANDING-PRODUCT-REC-MOBILE$" alt="MEN’S FUSE BRIGANDINE BIB">
+																			</picture>
+																		</a>
+																		<meta itemprop="image" content="https://images.thenorthface.com/is/image/TheNorthFace/NF0A333B_YCD_hero?$CATEGORY-LANDING-PRODUCT-REC$">
+																		<span class="button open-dialog-js" data-reveal-id="modal" data-reveal-ajax="//www.thenorthface.com/webapp/wcs/stores/servlet/VFQuickViewDisplay?urlLangId=-1&amp;langId=-1&amp;productId=621367&amp;catalogId=20001&amp;storeId=7001&amp;variationId=YCD">Quick Shop</span>
+																	</div>
+																	<a href="https://www.thenorthface.com/shop/mens-fuse-brigandine-bib-nf0a333b?variationId=SEM">
+																		<div class="info">
+																			<div class="swatches">
+																				<div class="swatch colors-1">
+																					<span class="name">TNF BLACK FUSE</span>
+																					<span class="color" style="background-color: #262527"></span>
+																				</div>
+																				<div class="swatch colors-1">
+																					<span class="name">MILITARY OLIVE FUSE</span>
+																					<span class="color" style="background-color: #62553A"></span>
+																				</div>
+																			</div>
+																			<h5><span itemprop="name">MEN’S FUSE BRIGANDINE BIB</span></h5>
+																			<div class="price">
+																				<span>$549.00</span>
+																			</div>
+																		</div>
+																	</a>
+																	<meta itemprop="brand" content="thenorthface">
+																	<meta itemprop="description" content="Men’s Fuse Brigandine Bib">
+																	<meta itemprop="sku" content="NF0A333B">
+																</article>
+															</div>
+															<div class="owl-item">
+																<article class="product teaser" itemscope="" itemtype="http://schema.org/Product">
+																	<div class="view">
+																		<a href="https://www.thenorthface.com/shop/mens-respirator-3-4-zip-mid-layer-nf0a332o?variationId=SEM">
+																			<picture class=" ratio-square">
+																				<!--[if IE 9]><video style="display: none;"><![endif]-->
+																				<source srcset="https://images.thenorthface.com/is/image/TheNorthFace/NF0A332O_BH2_hero?$CATEGORY-LANDING-PRODUCT-REC$" media="(min-width: 1024px)">
+																				<source srcset="https://images.thenorthface.com/is/image/TheNorthFace/NF0A332O_BH2_hero?$CATEGORY-LANDING-PRODUCT-REC$" media="(min-width: 640px)">
+																				<!--[if IE 9]></video><![endif]-->
+																				<img srcset="https://images.thenorthface.com/is/image/TheNorthFace/NF0A332O_BH2_hero?$CATEGORY-LANDING-PRODUCT-REC-MOBILE$" alt="MEN’S RESPIRATOR 3/4 ZIP MID LAYER">
+																			</picture>
+																		</a>
+																		<meta itemprop="image" content="https://images.thenorthface.com/is/image/TheNorthFace/NF0A332O_BH2_hero?$CATEGORY-LANDING-PRODUCT-REC$">
+																		<span class="button open-dialog-js" data-reveal-id="modal" data-reveal-ajax="//www.thenorthface.com/webapp/wcs/stores/servlet/VFQuickViewDisplay?urlLangId=-1&amp;langId=-1&amp;productId=621348&amp;catalogId=20001&amp;storeId=7001&amp;variationId=BH2">Quick Shop</span>
+																	</div>
+																	<a href="https://www.thenorthface.com/shop/mens-respirator-3-4-zip-mid-layer-nf0a332o?variationId=SEM">
+																		<div class="info">
+																			<div class="swatches">
+																				<div class="swatch colors-1">
+																					<span class="name">MILITARY OLIVE</span>
+																					<span class="color" style="background-color: #62553A"></span>
+																				</div>
+																				<div class="swatch colors-1">
+																					<span class="name">INAUGURATION BLUE</span>
+																					<span class="color" style="background-color: #363B7B"></span>
+																				</div>
+																				<div class="swatch colors-1">
+																					<span class="name">ZINNIA ORANGE</span>
+																					<span class="color" style="background-color: #EE9A00"></span>
+																				</div>
+																				<div class="swatch colors-1">
+																					<span class="name">TNF BLACK</span>
+																					<span class="color" style="background-color: #262527"></span>
+																				</div>
+																			</div>
+																			<h5><span itemprop="name">MEN’S RESPIRATOR 3/4 ZIP MID LAYER</span></h5>
+																			<div class="price">
+																				<span>$130.00</span>
+																			</div>
+																		</div>
+																	</a>
+																	<meta itemprop="brand" content="thenorthface">
+																	<meta itemprop="description" content="Men’s Respirator 3/4 Zip Mid Layer">
+																	<meta itemprop="sku" content="NF0A332O">
+																</article>
+															</div>
+															<div class="owl-item">
+																<article class="product teaser" itemscope="" itemtype="http://schema.org/Product">
+																	<div class="view">
+																		<a href="https://www.thenorthface.com/shop/womens-fuse-brigandine-jacket-nf0a333x?variationId=SEM">
+																			<picture class=" ratio-square">
+																				<!--[if IE 9]><video style="display: none;"><![endif]-->
+																				<source srcset="https://images.thenorthface.com/is/image/TheNorthFace/NF0A333X_YNK_hero?$CATEGORY-LANDING-PRODUCT-REC$" media="(min-width: 1024px)">
+																				<source srcset="https://images.thenorthface.com/is/image/TheNorthFace/NF0A333X_YNK_hero?$CATEGORY-LANDING-PRODUCT-REC$" media="(min-width: 640px)">
+																				<!--[if IE 9]></video><![endif]-->
+																				<img srcset="https://images.thenorthface.com/is/image/TheNorthFace/NF0A333X_YNK_hero?$CATEGORY-LANDING-PRODUCT-REC-MOBILE$" alt="WOMEN'S FUSE BRIGANDINE JACKET">
+																			</picture>
+																		</a>
+																		<meta itemprop="image" content="https://images.thenorthface.com/is/image/TheNorthFace/NF0A333X_YNK_hero?$CATEGORY-LANDING-PRODUCT-REC$">
+																		<span class="button open-dialog-js" data-reveal-id="modal" data-reveal-ajax="//www.thenorthface.com/webapp/wcs/stores/servlet/VFQuickViewDisplay?urlLangId=-1&amp;langId=-1&amp;productId=621386&amp;catalogId=20001&amp;storeId=7001&amp;variationId=YNK">Quick Shop</span>
+																	</div>
+																	<a href="https://www.thenorthface.com/shop/womens-fuse-brigandine-jacket-nf0a333x?variationId=SEM">
+																		<div class="info">
+																			<div class="swatches">
+																				<div class="swatch colors-1">
+																					<span class="name">VAPOROUS GREY FUSE</span>
+																					<span class="color" style="background-color: #DFDED8"></span>
+																				</div>
+																				<div class="swatch colors-1">
+																					<span class="name">MILITARY OLIVE FUSE</span>
+																					<span class="color" style="background-color: #62553A"></span>
+																				</div>
+																				<div class="swatch colors-1">
+																					<span class="name">MR. PINK FUSE</span>
+																					<span class="color" style="background-color: #E7C8C9"></span>
+																				</div>
+																				<div class="swatch colors-1">
+																					<span class="name">ZINNIA ORANGE FUSE</span>
+																					<span class="color" style="background-color: #FEA00F"></span>
+																				</div>
+																			</div>
+																			<h5><span itemprop="name">WOMEN'S FUSE BRIGANDINE JACKET</span></h5>
+																			<div class="price">
+																				<span>$699.00</span>
+																			</div>
+																		</div>
+																	</a>
+																	<meta itemprop="brand" content="thenorthface">
+																	<meta itemprop="description" content="Women's Fuse Brigandine Jacket">
+																	<meta itemprop="sku" content="NF0A333X">
+																</article>
+															</div>
+															<div class="owl-item">
+																<article class="product teaser" itemscope="" itemtype="http://schema.org/Product">
+																	<div class="view">
+																		<a href="https://www.thenorthface.com/shop/womens-fuse-brigandine-bib-nf0a333y?variationId=SEM">
+																			<picture class=" ratio-square">
+																				<!--[if IE 9]><video style="display: none;"><![endif]-->
+																				<source srcset="https://images.thenorthface.com/is/image/TheNorthFace/NF0A333Y_CGW_hero?$CATEGORY-LANDING-PRODUCT-REC$" media="(min-width: 1024px)">
+																				<source srcset="https://images.thenorthface.com/is/image/TheNorthFace/NF0A333Y_CGW_hero?$CATEGORY-LANDING-PRODUCT-REC$" media="(min-width: 640px)">
+																				<!--[if IE 9]></video><![endif]-->
+																				<img srcset="https://images.thenorthface.com/is/image/TheNorthFace/NF0A333Y_CGW_hero?$CATEGORY-LANDING-PRODUCT-REC-MOBILE$" alt="WOMEN'S FUSE BRIGANDINE BIB">
+																			</picture>
+																		</a>
+																		<meta itemprop="image" content="https://images.thenorthface.com/is/image/TheNorthFace/NF0A333Y_CGW_hero?$CATEGORY-LANDING-PRODUCT-REC$">
+																		<span class="button open-dialog-js" data-reveal-id="modal" data-reveal-ajax="//www.thenorthface.com/webapp/wcs/stores/servlet/VFQuickViewDisplay?urlLangId=-1&amp;langId=-1&amp;productId=621387&amp;catalogId=20001&amp;storeId=7001&amp;variationId=CGW">Quick Shop</span>
+																	</div>
+																	<a href="https://www.thenorthface.com/shop/womens-fuse-brigandine-bib-nf0a333y?variationId=SEM">
+																		<div class="info">
+																			<div class="swatches">
+																				<div class="swatch colors-1">
+																					<span class="name">TNF BLACK FUSE</span>
+																					<span class="color" style="background-color: #262527"></span>
+																				</div>
+																				<div class="swatch colors-1">
+																					<span class="name">MILITARY OLIVE FUSE</span>
+																					<span class="color" style="background-color: #62553A"></span>
+																				</div>
+																			</div>
+																			<h5><span itemprop="name">WOMEN'S FUSE BRIGANDINE BIB</span></h5>
+																			<div class="price">
+																				<span>$549.00</span>
+																			</div>
+																		</div>
+																	</a>
+																	<meta itemprop="brand" content="thenorthface">
+																	<meta itemprop="description" content="Women's Fuse Brigandine Bib">
+																	<meta itemprop="sku" content="NF0A333Y">
+																</article>
+															</div>
+															<div class="owl-item">
+																<article class="product teaser" itemscope="" itemtype="http://schema.org/Product">
+																	<div class="view">
+																		<a href="https://www.thenorthface.com/shop/womens-respirator-3-4-zip-mid-layer-nf0a3344?variationId=SEM">
+																			<picture class=" ratio-square">
+																				<!--[if IE 9]><video style="display: none;"><![endif]-->
+																				<source srcset="https://images.thenorthface.com/is/image/TheNorthFace/NF0A3344_JK3_hero?$CATEGORY-LANDING-PRODUCT-REC$" media="(min-width: 1024px)">
+																				<source srcset="https://images.thenorthface.com/is/image/TheNorthFace/NF0A3344_JK3_hero?$CATEGORY-LANDING-PRODUCT-REC$" media="(min-width: 640px)">
+																				<!--[if IE 9]></video><![endif]-->
+																				<img srcset="https://images.thenorthface.com/is/image/TheNorthFace/NF0A3344_JK3_hero?$CATEGORY-LANDING-PRODUCT-REC-MOBILE$" alt="WOMEN'S RESPIRATOR 3/4 ZIP MID LAYER">
+																			</picture>
+																		</a>
+																		<meta itemprop="image" content="https://images.thenorthface.com/is/image/TheNorthFace/NF0A3344_JK3_hero?$CATEGORY-LANDING-PRODUCT-REC$">
+																		<span class="button open-dialog-js" data-reveal-id="modal" data-reveal-ajax="//www.thenorthface.com/webapp/wcs/stores/servlet/VFQuickViewDisplay?urlLangId=-1&amp;langId=-1&amp;productId=621392&amp;catalogId=20001&amp;storeId=7001&amp;variationId=JK3">Quick Shop</span>
+																	</div>
+																	<a href="https://www.thenorthface.com/shop/womens-respirator-3-4-zip-mid-layer-nf0a3344?variationId=SEM">
+																		<div class="info">
+																			<div class="swatches">
+																				<div class="swatch colors-1">
+																					<span class="name">MILITARY OLIVE</span>
+																					<span class="color" style="background-color: #62553A"></span>
+																				</div>
+																				<div class="swatch colors-1">
+																					<span class="name">INAUGURATION BLUE</span>
+																					<span class="color" style="background-color: #363B7B"></span>
+																				</div>
+																				<div class="swatch colors-1">
+																					<span class="name">ZINNIA ORANGE</span>
+																					<span class="color" style="background-color: #EE9A00"></span>
+																				</div>
+																				<div class="swatch colors-1">
+																					<span class="name">TNF BLACK</span>
+																					<span class="color" style="background-color: #262527"></span>
+																				</div>
+																			</div>
+																			<h5><span itemprop="name">WOMEN'S RESPIRATOR 3/4 ZIP MID LAYER</span></h5>
+																			<div class="price">
+																				<span>$130.00</span>
+																			</div>
+																		</div>
+																	</a>
+																	<meta itemprop="brand" content="thenorthface">
+																	<meta itemprop="description" content="Women's Respirator 3/4 Zip Mid Layer">
+																	<meta itemprop="sku" content="NF0A3344">
+																</article>
+															</div>
+															<div class="owl-item">
+																<article class="product teaser" itemscope="" itemtype="http://schema.org/Product">
+																	<div class="view">
+																		<a href="https://www.thenorthface.com/shop/womens-wool-baselayer-long-sleeve-zip-neck-hgr-nf0a3bzp?variationId=SEM">
+																			<picture class=" ratio-square">
+																				<!--[if IE 9]><video style="display: none;"><![endif]-->
+																				<source srcset="https://images.thenorthface.com/is/image/TheNorthFace/NF0A3BZP_JBU_hero?$CATEGORY-LANDING-PRODUCT-REC$" media="(min-width: 1024px)">
+																				<source srcset="https://images.thenorthface.com/is/image/TheNorthFace/NF0A3BZP_JBU_hero?$CATEGORY-LANDING-PRODUCT-REC$" media="(min-width: 640px)">
+																				<!--[if IE 9]></video><![endif]-->
+																				<img srcset="https://images.thenorthface.com/is/image/TheNorthFace/NF0A3BZP_JBU_hero?$CATEGORY-LANDING-PRODUCT-REC-MOBILE$" alt="WOMEN'S WOOL BASELAYER LONG-SLEEVE ZIP NECK">
+																			</picture>
+																		</a>
+																		<meta itemprop="image" content="https://images.thenorthface.com/is/image/TheNorthFace/NF0A3BZP_JBU_hero?$CATEGORY-LANDING-PRODUCT-REC$">
+																		<span class="button open-dialog-js" data-reveal-id="modal" data-reveal-ajax="//www.thenorthface.com/webapp/wcs/stores/servlet/VFQuickViewDisplay?urlLangId=-1&amp;langId=-1&amp;productId=621730&amp;catalogId=20001&amp;storeId=7001&amp;variationId=JBU">Quick Shop</span>
+																	</div>
+																	<a href="https://www.thenorthface.com/shop/womens-wool-baselayer-long-sleeve-zip-neck-hgr-nf0a3bzp?variationId=SEM">
+																		<div class="info">
+																			<div class="swatches">
+																				<div class="swatch colors-1">
+																					<span class="name">TNF DARK GREY HEATHER(STD)</span>
+																					<span class="color" style="background-color: #474548"></span>
+																				</div>
+																			</div>
+																			<h5><span itemprop="name">WOMEN'S WOOL BASELAYER LONG-SLEEVE ZIP NECK</span></h5>
+																			<div class="price">
+																				<span>$130.00</span>
+																			</div>
+																		</div>
+																	</a>
+																	<meta itemprop="brand" content="thenorthface">
+																	<meta itemprop="description" content="Women's Wool Baselayer Long-Sleeve Zip Neck">
+																	<meta itemprop="sku" content="NF0A3BZP">
+																</article>
+															</div>
+															<div class="owl-item">
+																<article class="product teaser" itemscope="" itemtype="http://schema.org/Product">
+																	<div class="view">
+																		<a href="https://www.thenorthface.com/shop/womens-wool-baselayer-long-sleeve-crew-neck-nf0a335f?variationId=SEM">
+																			<picture class=" ratio-square">
+																				<!--[if IE 9]><video style="display: none;"><![endif]-->
+																				<source srcset="https://images.thenorthface.com/is/image/TheNorthFace/NF0A335F_HGR_hero?$CATEGORY-LANDING-PRODUCT-REC$" media="(min-width: 1024px)">
+																				<source srcset="https://images.thenorthface.com/is/image/TheNorthFace/NF0A335F_HGR_hero?$CATEGORY-LANDING-PRODUCT-REC$" media="(min-width: 640px)">
+																				<!--[if IE 9]></video><![endif]-->
+																				<img srcset="https://images.thenorthface.com/is/image/TheNorthFace/NF0A335F_HGR_hero?$CATEGORY-LANDING-PRODUCT-REC-MOBILE$" alt="WOMEN'S WOOL BASELAYER LONG-SLEEVE CREW NECK">
+																			</picture>
+																		</a>
+																		<meta itemprop="image" content="https://images.thenorthface.com/is/image/TheNorthFace/NF0A335F_HGR_hero?$CATEGORY-LANDING-PRODUCT-REC$">
+																		<span class="button open-dialog-js" data-reveal-id="modal" data-reveal-ajax="//www.thenorthface.com/webapp/wcs/stores/servlet/VFQuickViewDisplay?urlLangId=-1&amp;langId=-1&amp;productId=621423&amp;catalogId=20001&amp;storeId=7001&amp;variationId=HGR">Quick Shop</span>
+																	</div>
+																	<a href="https://www.thenorthface.com/shop/womens-wool-baselayer-long-sleeve-crew-neck-nf0a335f?variationId=SEM">
+																		<div class="info">
+																			<div class="swatches">
+																				<div class="swatch colors-1">
+																					<span class="name">TNF DARK GREY HEATHER(STD)</span>
+																					<span class="color" style="background-color: #474548"></span>
+																				</div>
+																			</div>
+																			<h5><span itemprop="name">WOMEN'S WOOL BASELAYER LONG-SLEEVE CREW NECK</span></h5>
+																			<div class="price">
+																				<span>$120.00</span>
+																			</div>
+																		</div>
+																	</a>
+																	<meta itemprop="brand" content="thenorthface">
+																	<meta itemprop="description" content="Women's Wool Baselayer Long-Sleeve Crew Neck">
+																	<meta itemprop="sku" content="NF0A335F">
+																</article>
+															</div>
+															<div class="owl-item">
+																<article class="product teaser" itemscope="" itemtype="http://schema.org/Product">
+																	<div class="view">
+																		<a href="https://www.thenorthface.com/shop/womens-wool-baselayer-tights-hgr-nf0a3bzv?variationId=SEM">
+																			<picture class=" ratio-square">
+																				<!--[if IE 9]><video style="display: none;"><![endif]-->
+																				<source srcset="https://images.thenorthface.com/is/image/TheNorthFace/NF0A3BZV_JBU_hero?$CATEGORY-LANDING-PRODUCT-REC$" media="(min-width: 1024px)">
+																				<source srcset="https://images.thenorthface.com/is/image/TheNorthFace/NF0A3BZV_JBU_hero?$CATEGORY-LANDING-PRODUCT-REC$" media="(min-width: 640px)">
+																				<!--[if IE 9]></video><![endif]-->
+																				<img srcset="https://images.thenorthface.com/is/image/TheNorthFace/NF0A3BZV_JBU_hero?$CATEGORY-LANDING-PRODUCT-REC-MOBILE$" alt="WOMEN'S WOOL BASELAYER TIGHTS">
+																			</picture>
+																		</a>
+																		<meta itemprop="image" content="https://images.thenorthface.com/is/image/TheNorthFace/NF0A3BZV_JBU_hero?$CATEGORY-LANDING-PRODUCT-REC$">
+																		<span class="button open-dialog-js" data-reveal-id="modal" data-reveal-ajax="//www.thenorthface.com/webapp/wcs/stores/servlet/VFQuickViewDisplay?urlLangId=-1&amp;langId=-1&amp;productId=621734&amp;catalogId=20001&amp;storeId=7001&amp;variationId=JBU">Quick Shop</span>
+																	</div>
+																	<a href="https://www.thenorthface.com/shop/womens-wool-baselayer-tights-hgr-nf0a3bzv?variationId=SEM">
+																		<div class="info">
+																			<div class="swatches">
+																				<div class="swatch colors-1">
+																					<span class="name">TNF DARK GREY HEATHER(STD)</span>
+																					<span class="color" style="background-color: #474548"></span>
+																				</div>
+																			</div>
+																			<h5><span itemprop="name">WOMEN'S WOOL BASELAYER TIGHTS</span></h5>
+																			<div class="price">
+																				<span>$99.00</span>
+																			</div>
+																		</div>
+																	</a>
+																	<meta itemprop="brand" content="thenorthface">
+																	<meta itemprop="description" content="Women's Wool Baselayer Tights">
+																	<meta itemprop="sku" content="NF0A3BZV">
+																</article>
+															</div>
+														</div>
+													</div>
+													<div class="owl-nav">
+														<div class="owl-prev"></div>
+														<div class="owl-next"></div>
+													</div>
+													<div class="owl-dots">
+														<div class="owl-dot"><span></span></div>
+														<div class="owl-dot active"><span></span></div>
+														<div class="owl-dot"><span></span></div>
+														<div class="owl-dot"><span></span></div>
+														<div class="owl-dot"><span></span></div>
+														<div class="owl-dot"><span></span></div>
+														<div class="owl-dot"><span></span></div>
+														<div class="owl-dot"><span></span></div>
+														<div class="owl-dot"><span></span></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</article>
+									<article class="custom__content__b purist_products" id="yosemitesofa">
+										<div class="">
+											<div class="custom__carousel" data-carousel="mobile">
+												<div class="o-carousel owl-loaded owl-drag" id="carousel0">
+													<div class="owl-stage-outer">
+														<div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: 0s;">
+															<div class="owl-item">
+																<article class="product teaser" itemscope="" itemtype="http://schema.org/Product">
+																	<div class="view">
+																		<a href="https://www.thenorthface.com/shop/mens-purist-triclimate-jacket-nf0a332l?variationId=SCW">
+																			<picture class=" ratio-square">
+																				<!--[if IE 9]><video style="display: none;"><![endif]-->
+																				<source srcset="https://images.thenorthface.com/is/image/TheNorthFace/NF0A332L_WMB_hero?$CATEGORY-LANDING-PRODUCT-REC$" media="(min-width: 1024px)">
+																				<source srcset="https://images.thenorthface.com/is/image/TheNorthFace/NF0A332L_WMB_hero?$CATEGORY-LANDING-PRODUCT-REC$" media="(min-width: 640px)">
+																				<!--[if IE 9]></video><![endif]-->
+																				<img srcset="https://images.thenorthface.com/is/image/TheNorthFace/NF0A332L_WMB_hero?$CATEGORY-LANDING-PRODUCT-REC-MOBILE$" alt="MEN'S PURIST TRICLIMATE® JACKET">
+																			</picture>
+																		</a>
+																		<meta itemprop="image" content="https://images.thenorthface.com/is/image/TheNorthFace/NF0A332L_WMB_hero?$CATEGORY-LANDING-PRODUCT-REC$">
+																		<span class="button open-dialog-js" data-reveal-id="modal" data-reveal-ajax="//www.thenorthface.com/webapp/wcs/stores/servlet/VFQuickViewDisplay?urlLangId=-1&amp;langId=-1&amp;productId=621345&amp;catalogId=20001&amp;storeId=7001&amp;variationId=WMB">Quick Shop</span>
+																	</div>
+																	<a href="https://www.thenorthface.com/shop/mens-purist-triclimate-jacket-nf0a332l?variationId=SCW">
+																		<div class="info">
+																			<div class="swatches">
+																				<div class="swatch colors-3">
+																					<span class="name">TNF BLACK/MR. PINK/ZINNIA ORANGE</span>
+																					<span class="color" style="background-color: #262527"></span>
+																					<span class="color" style="background-color: #E8ADCA"></span>
+																					<span class="color" style="background-color: #FEA00F"></span>
+																				</div>
+																				<div class="swatch colors-1">
+																					<span class="name">INAUGURATION BLUE</span>
+																					<span class="color" style="background-color: #363B7B"></span>
+																				</div>
+																				<div class="swatch colors-2">
+																					<span class="name">MILITARY OLIVE/TNF BLACK</span>
+																					<span class="color" style="background-color: #62553A"></span>
+																					<span class="color" style="background-color: #262527"></span>
+																				</div>
+																			</div>
+																			<h5><span itemprop="name">MEN'S PURIST TRICLIMATE® JACKET</span></h5>
+																			<div class="price">
+																				<span>$549.00</span>
+																			</div>
+																		</div>
+																	</a>
+																	<meta itemprop="brand" content="thenorthface">
+																	<meta itemprop="description" content="Men's Purist Triclimate® Jacket">
+																	<meta itemprop="sku" content="NF0A332L">
+																</article>
+															</div>
+															<div class="owl-item">
+																<article class="product teaser" itemscope="" itemtype="http://schema.org/Product">
+																	<div class="view">
+																		<a href="https://www.thenorthface.com/shop/mens-purist-pants-nf0a332p?variationId=SCW">
+																			<picture class=" ratio-square">
+																				<!--[if IE 9]><video style="display: none;"><![endif]-->
+																				<source srcset="https://images.thenorthface.com/is/image/TheNorthFace/NF0A332P_H6G_hero?$CATEGORY-LANDING-PRODUCT-REC$" media="(min-width: 1024px)">
+																				<source srcset="https://images.thenorthface.com/is/image/TheNorthFace/NF0A332P_H6G_hero?$CATEGORY-LANDING-PRODUCT-REC$" media="(min-width: 640px)">
+																				<!--[if IE 9]></video><![endif]-->
+																				<img srcset="https://images.thenorthface.com/is/image/TheNorthFace/NF0A332P_H6G_hero?$CATEGORY-LANDING-PRODUCT-REC-MOBILE$" alt="MEN'S PURIST PANTS">
+																			</picture>
+																		</a>
+																		<meta itemprop="image" content="https://images.thenorthface.com/is/image/TheNorthFace/NF0A332P_H6G_hero?$CATEGORY-LANDING-PRODUCT-REC$">
+																		<span class="button open-dialog-js" data-reveal-id="modal" data-reveal-ajax="//www.thenorthface.com/webapp/wcs/stores/servlet/VFQuickViewDisplay?urlLangId=-1&amp;langId=-1&amp;productId=621349&amp;catalogId=20001&amp;storeId=7001&amp;variationId=H6G">Quick Shop</span>
+																	</div>
+																	<a href="https://www.thenorthface.com/shop/mens-purist-pants-nf0a332p?variationId=SCW">
+																		<div class="info">
+																			<div class="swatches">
+																				<div class="swatch colors-1">
+																					<span class="name">ZINNIA ORANGE</span>
+																					<span class="color" style="background-color: #EE9A00"></span>
+																				</div>
+																				<div class="swatch colors-1">
+																					<span class="name">MILITARY OLIVE</span>
+																					<span class="color" style="background-color: #62553A"></span>
+																				</div>
+																				<div class="swatch colors-1">
+																					<span class="name">TNF BLACK</span>
+																					<span class="color" style="background-color: #262527"></span>
+																				</div>
+																			</div>
+																			<h5><span itemprop="name">MEN'S PURIST PANTS</span></h5>
+																			<div class="price">
+																				<span>$449.00</span>
+																			</div>
+																		</div>
+																	</a>
+																	<meta itemprop="brand" content="thenorthface">
+																	<meta itemprop="description" content="Men's Purist Pants">
+																	<meta itemprop="sku" content="NF0A332P">
+																</article>
+															</div>
+															<div class="owl-item">
+																<article class="product teaser" itemscope="" itemtype="http://schema.org/Product">
+																	<div class="view">
+																		<a href="https://www.thenorthface.com/shop/mens-unlimited-jacket-nf0a332n?variationId=SCW">
+																			<picture class=" ratio-square">
+																				<!--[if IE 9]><video style="display: none;"><![endif]-->
+																				<source srcset="https://images.thenorthface.com/is/image/TheNorthFace/NF0A332N_37U_hero?$CATEGORY-LANDING-PRODUCT-REC$" media="(min-width: 1024px)">
+																				<source srcset="https://images.thenorthface.com/is/image/TheNorthFace/NF0A332N_37U_hero?$CATEGORY-LANDING-PRODUCT-REC$" media="(min-width: 640px)">
+																				<!--[if IE 9]></video><![endif]-->
+																				<img srcset="https://images.thenorthface.com/is/image/TheNorthFace/NF0A332N_37U_hero?$CATEGORY-LANDING-PRODUCT-REC-MOBILE$" alt="MEN'S UNLIMITED JACKET">
+																			</picture>
+																		</a>
+																		<meta itemprop="image" content="https://images.thenorthface.com/is/image/TheNorthFace/NF0A332N_37U_hero?$CATEGORY-LANDING-PRODUCT-REC$">
+																		<span class="button open-dialog-js" data-reveal-id="modal" data-reveal-ajax="//www.thenorthface.com/webapp/wcs/stores/servlet/VFQuickViewDisplay?urlLangId=-1&amp;langId=-1&amp;productId=621347&amp;catalogId=20001&amp;storeId=7001&amp;variationId=37U">Quick Shop</span>
+																	</div>
+																	<a href="https://www.thenorthface.com/shop/mens-unlimited-jacket-nf0a332n?variationId=SCW">
+																		<div class="info">
+																			<div class="swatches">
+																				<div class="swatch colors-1">
+																					<span class="name">TNF BLACK</span>
+																					<span class="color" style="background-color: #262527"></span>
+																				</div>
+																				<div class="swatch colors-1">
+																					<span class="name">MILITARY OLIVE</span>
+																					<span class="color" style="background-color: #62553A"></span>
+																				</div>
+																				<div class="swatch colors-1">
+																					<span class="name">ZINNIA ORANGE</span>
+																					<span class="color" style="background-color: #EE9A00"></span>
+																				</div>
+																			</div>
+																			<h5><span itemprop="name">MEN'S UNLIMITED JACKET</span></h5>
+																			<div class="price">
+																				<span>$249.00</span>
+																			</div>
+																		</div>
+																	</a>
+																	<meta itemprop="brand" content="thenorthface">
+																	<meta itemprop="description" content="Men's Unlimited Jacket">
+																	<meta itemprop="sku" content="NF0A332N">
+																</article>
+															</div>
+															<div class="owl-item">
+																<article class="product teaser" itemscope="" itemtype="http://schema.org/Product">
+																	<div class="view">
+																		<a href="https://www.thenorthface.com/shop/womens-purist-triclimate-jacket-nf0a333z?variationId=SCW">
+																			<picture class=" ratio-square">
+																				<!--[if IE 9]><video style="display: none;"><![endif]-->
+																				<source srcset="https://images.thenorthface.com/is/image/TheNorthFace/NF0A333Z_XVR_hero?$CATEGORY-LANDING-PRODUCT-REC$" media="(min-width: 1024px)">
+																				<source srcset="https://images.thenorthface.com/is/image/TheNorthFace/NF0A333Z_XVR_hero?$CATEGORY-LANDING-PRODUCT-REC$" media="(min-width: 640px)">
+																				<!--[if IE 9]></video><![endif]-->
+																				<img srcset="https://images.thenorthface.com/is/image/TheNorthFace/NF0A333Z_XVR_hero?$CATEGORY-LANDING-PRODUCT-REC-MOBILE$" alt="WOMEN'S PURIST TRICLIMATE® JACKET">
+																			</picture>
+																		</a>
+																		<meta itemprop="image" content="https://images.thenorthface.com/is/image/TheNorthFace/NF0A333Z_XVR_hero?$CATEGORY-LANDING-PRODUCT-REC$">
+																		<span class="button open-dialog-js" data-reveal-id="modal" data-reveal-ajax="//www.thenorthface.com/webapp/wcs/stores/servlet/VFQuickViewDisplay?urlLangId=-1&amp;langId=-1&amp;productId=621388&amp;catalogId=20001&amp;storeId=7001&amp;variationId=XVR">Quick Shop</span>
+																	</div>
+																	<a href="https://www.thenorthface.com/shop/womens-purist-triclimate-jacket-nf0a333z?variationId=SCW">
+																		<div class="info">
+																			<div class="swatches">
+																				<div class="swatch colors-1">
+																					<span class="name">VAPOROUS GREY</span>
+																					<span class="color" style="background-color: #BEBEBE"></span>
+																				</div>
+																				<div class="swatch colors-1">
+																					<span class="name">INAUGURATION BLUE</span>
+																					<span class="color" style="background-color: #363B7B"></span>
+																				</div>
+																				<div class="swatch colors-2">
+																					<span class="name">ZINNIA ORANGE/MR. PINK</span>
+																					<span class="color" style="background-color: #FEA00F"></span>
+																					<span class="color" style="background-color: #E8ADCA"></span>
+																				</div>
+																			</div>
+																			<h5><span itemprop="name">WOMEN'S PURIST TRICLIMATE® JACKET</span></h5>
+																			<div class="price">
+																				<span>$549.00</span>
+																			</div>
+																		</div>
+																	</a>
+																	<meta itemprop="brand" content="thenorthface">
+																	<meta itemprop="description" content="Women's Purist Triclimate® Jacket">
+																	<meta itemprop="sku" content="NF0A333Z">
+																</article>
+															</div>
+															<div class="owl-item">
+																<article class="product teaser" itemscope="" itemtype="http://schema.org/Product">
+																	<div class="view">
+																		<a href="https://www.thenorthface.com/shop/womens-purist-pants-nf0a3341?variationId=SCW">
+																			<picture class=" ratio-square">
+																				<!--[if IE 9]><video style="display: none;"><![endif]-->
+																				<source srcset="https://images.thenorthface.com/is/image/TheNorthFace/NF0A3341_JK3_hero?$CATEGORY-LANDING-PRODUCT-REC$" media="(min-width: 1024px)">
+																				<source srcset="https://images.thenorthface.com/is/image/TheNorthFace/NF0A3341_JK3_hero?$CATEGORY-LANDING-PRODUCT-REC$" media="(min-width: 640px)">
+																				<!--[if IE 9]></video><![endif]-->
+																				<img srcset="https://images.thenorthface.com/is/image/TheNorthFace/NF0A3341_JK3_hero?$CATEGORY-LANDING-PRODUCT-REC-MOBILE$" alt="WOMEN'S PURIST PANTS">
+																			</picture>
+																		</a>
+																		<meta itemprop="image" content="https://images.thenorthface.com/is/image/TheNorthFace/NF0A3341_JK3_hero?$CATEGORY-LANDING-PRODUCT-REC$">
+																		<span class="button open-dialog-js" data-reveal-id="modal" data-reveal-ajax="//www.thenorthface.com/webapp/wcs/stores/servlet/VFQuickViewDisplay?urlLangId=-1&amp;langId=-1&amp;productId=621389&amp;catalogId=20001&amp;storeId=7001&amp;variationId=JK3">Quick Shop</span>
+																	</div>
+																	<a href="https://www.thenorthface.com/shop/womens-purist-pants-nf0a3341?variationId=SCW">
+																		<div class="info">
+																			<div class="swatches">
+																				<div class="swatch colors-1">
+																					<span class="name">MR. PINK</span>
+																					<span class="color" style="background-color: #E7C8C9"></span>
+																				</div>
+																				<div class="swatch colors-1">
+																					<span class="name">MILITARY OLIVE</span>
+																					<span class="color" style="background-color: #62553A"></span>
+																				</div>
+																				<div class="swatch colors-1">
+																					<span class="name">TNF BLACK</span>
+																					<span class="color" style="background-color: #262527"></span>
+																				</div>
+																			</div>
+																			<h5><span itemprop="name">WOMEN'S PURIST PANTS</span></h5>
+																			<div class="price">
+																				<span>$449.00</span>
+																			</div>
+																		</div>
+																	</a>
+																	<meta itemprop="brand" content="thenorthface">
+																	<meta itemprop="description" content="Women's Purist Pants">
+																	<meta itemprop="sku" content="NF0A3341">
+																</article>
+															</div>
+															<div class="owl-item">
+																<article class="product teaser" itemscope="" itemtype="http://schema.org/Product">
+																	<div class="view">
+																		<a href="https://www.thenorthface.com/shop/womens-unlimited-jacket-nf0a3343?variationId=SCW">
+																			<picture class=" ratio-square">
+																				<!--[if IE 9]><video style="display: none;"><![endif]-->
+																				<source srcset="https://images.thenorthface.com/is/image/TheNorthFace/NF0A3343_BH2_hero?$CATEGORY-LANDING-PRODUCT-REC$" media="(min-width: 1024px)">
+																				<source srcset="https://images.thenorthface.com/is/image/TheNorthFace/NF0A3343_BH2_hero?$CATEGORY-LANDING-PRODUCT-REC$" media="(min-width: 640px)">
+																				<!--[if IE 9]></video><![endif]-->
+																				<img srcset="https://images.thenorthface.com/is/image/TheNorthFace/NF0A3343_BH2_hero?$CATEGORY-LANDING-PRODUCT-REC-MOBILE$" alt="WOMEN'S UNLIMITED JACKET">
+																			</picture>
+																		</a>
+																		<meta itemprop="image" content="https://images.thenorthface.com/is/image/TheNorthFace/NF0A3343_BH2_hero?$CATEGORY-LANDING-PRODUCT-REC$">
+																		<span class="button open-dialog-js" data-reveal-id="modal" data-reveal-ajax="//www.thenorthface.com/webapp/wcs/stores/servlet/VFQuickViewDisplay?urlLangId=-1&amp;langId=-1&amp;productId=621391&amp;catalogId=20001&amp;storeId=7001&amp;variationId=BH2">Quick Shop</span>
+																	</div>
+																	<a href="https://www.thenorthface.com/shop/womens-unlimited-jacket-nf0a3343?variationId=SCW">
+																		<div class="info">
+																			<div class="swatches">
+																				<div class="swatch colors-1">
+																					<span class="name">TNF BLACK</span>
+																					<span class="color" style="background-color: #262527"></span>
+																				</div>
+																				<div class="swatch colors-1">
+																					<span class="name">INAUGURATION BLUE</span>
+																					<span class="color" style="background-color: #363B7B"></span>
+																				</div>
+																				<div class="swatch colors-1">
+																					<span class="name">MILITARY OLIVE</span>
+																					<span class="color" style="background-color: #62553A"></span>
+																				</div>
+																			</div>
+																			<h5><span itemprop="name">WOMEN'S UNLIMITED JACKET</span></h5>
+																			<div class="price">
+																				<span>$249.00</span>
+																			</div>
+																		</div>
+																	</a>
+																	<meta itemprop="brand" content="thenorthface">
+																	<meta itemprop="description" content="Women's Unlimited Jacket">
+																	<meta itemprop="sku" content="NF0A3343">
+																</article>
+															</div>
+															<div class="owl-item">
+																<article class="product teaser" itemscope="" itemtype="http://schema.org/Product">
+																	<div class="view">
+																		<a href="https://www.thenorthface.com/shop/womens-wool-baselayer-tights-nf0a335g?variationId=SCW">
+																			<picture class=" ratio-square">
+																				<!--[if IE 9]><video style="display: none;"><![endif]-->
+																				<source srcset="https://images.thenorthface.com/is/image/TheNorthFace/NF0A335G_HGR_hero?$CATEGORY-LANDING-PRODUCT-REC$" media="(min-width: 1024px)">
+																				<source srcset="https://images.thenorthface.com/is/image/TheNorthFace/NF0A335G_HGR_hero?$CATEGORY-LANDING-PRODUCT-REC$" media="(min-width: 640px)">
+																				<!--[if IE 9]></video><![endif]-->
+																				<img srcset="https://images.thenorthface.com/is/image/TheNorthFace/NF0A335G_HGR_hero?$CATEGORY-LANDING-PRODUCT-REC-MOBILE$" alt="WOMEN'S WOOL BASELAYER TIGHTS">
+																			</picture>
+																		</a>
+																		<meta itemprop="image" content="https://images.thenorthface.com/is/image/TheNorthFace/NF0A335G_HGR_hero?$CATEGORY-LANDING-PRODUCT-REC$">
+																		<span class="button open-dialog-js" data-reveal-id="modal" data-reveal-ajax="//www.thenorthface.com/webapp/wcs/stores/servlet/VFQuickViewDisplay?urlLangId=-1&amp;langId=-1&amp;productId=621424&amp;catalogId=20001&amp;storeId=7001&amp;variationId=HGR">Quick Shop</span>
+																	</div>
+																	<a href="https://www.thenorthface.com/shop/womens-wool-baselayer-tights-nf0a335g?variationId=SCW">
+																		<div class="info">
+																			<div class="swatches">
+																				<div class="swatch colors-1">
+																					<span class="name">TNF DARK GREY HEATHER(STD)</span>
+																					<span class="color" style="background-color: #474548"></span>
+																				</div>
+																			</div>
+																			<h5><span itemprop="name">WOMEN'S WOOL BASELAYER TIGHTS</span></h5>
+																			<div class="price">
+																				<span>$99.00</span>
+																			</div>
+																		</div>
+																	</a>
+																	<meta itemprop="brand" content="thenorthface">
+																	<meta itemprop="description" content="Women's Wool Baselayer Tights">
+																	<meta itemprop="sku" content="NF0A335G">
+																</article>
+															</div>
+															<div class="owl-item">
+																<article class="product teaser" itemscope="" itemtype="http://schema.org/Product">
+																	<div class="view">
+																		<a href="https://www.thenorthface.com/shop/womens-wool-baselayer-long-sleeve-crew-neck-hgr-nf0a3bzt?variationId=SCW">
+																			<picture class=" ratio-square">
+																				<!--[if IE 9]><video style="display: none;"><![endif]-->
+																				<source srcset="https://images.thenorthface.com/is/image/TheNorthFace/NF0A3BZT_JBU_hero?$CATEGORY-LANDING-PRODUCT-REC$" media="(min-width: 1024px)">
+																				<source srcset="https://images.thenorthface.com/is/image/TheNorthFace/NF0A3BZT_JBU_hero?$CATEGORY-LANDING-PRODUCT-REC$" media="(min-width: 640px)">
+																				<!--[if IE 9]></video><![endif]-->
+																				<img srcset="https://images.thenorthface.com/is/image/TheNorthFace/NF0A3BZT_JBU_hero?$CATEGORY-LANDING-PRODUCT-REC-MOBILE$" alt="WOMEN'S WOOL BASELAYER LONG-SLEEVE CREW NECK">
+																			</picture>
+																		</a>
+																		<meta itemprop="image" content="https://images.thenorthface.com/is/image/TheNorthFace/NF0A3BZT_JBU_hero?$CATEGORY-LANDING-PRODUCT-REC$">
+																		<span class="button open-dialog-js" data-reveal-id="modal" data-reveal-ajax="//www.thenorthface.com/webapp/wcs/stores/servlet/VFQuickViewDisplay?urlLangId=-1&amp;langId=-1&amp;productId=621733&amp;catalogId=20001&amp;storeId=7001&amp;variationId=JBU">Quick Shop</span>
+																	</div>
+																	<a href="https://www.thenorthface.com/shop/womens-wool-baselayer-long-sleeve-crew-neck-hgr-nf0a3bzt?variationId=SCW">
+																		<div class="info">
+																			<div class="swatches">
+																				<div class="swatch colors-1">
+																					<span class="name">TNF DARK GREY HEATHER(STD)</span>
+																					<span class="color" style="background-color: #474548"></span>
+																				</div>
+																			</div>
+																			<h5><span itemprop="name">WOMEN'S WOOL BASELAYER LONG-SLEEVE CREW NECK</span></h5>
+																			<div class="price">
+																				<span>$120.00</span>
+																			</div>
+																		</div>
+																	</a>
+																	<meta itemprop="brand" content="thenorthface">
+																	<meta itemprop="description" content="Women's Wool Baselayer Long-Sleeve Crew Neck">
+																	<meta itemprop="sku" content="NF0A3BZT">
+																</article>
+															</div>
+														</div>
+													</div>
+													<div class="owl-nav">
+														<div class="owl-prev"></div>
+														<div class="owl-next"></div>
+													</div>
+													<div class="owl-dots">
+														<div class="owl-dot"><span></span></div>
+														<div class="owl-dot active"><span></span></div>
+														<div class="owl-dot"><span></span></div>
+														<div class="owl-dot"><span></span></div>
+														<div class="owl-dot"><span></span></div>
+														<div class="owl-dot"><span></span></div>
+														<div class="owl-dot"><span></span></div>
+														<div class="owl-dot"><span></span></div>
+													</div>
+												</div>
+												<!--  <div class="row">
+	                                <div class="columns small-12">
+	                                    <a href=""><span class="button">Shop the full collection</span></a>
+	                                </div>
+	                            </div> -->
+											</div>
+										</div>
+										<!-- /mobile -->
+										<!-- /tablet products -->
+										<!-- /tablet-->
+										<!-- /mobile -->
+										<!-- /tablet products -->
+										<!-- /tablet-->
+									</article>
+									<!-- mobile -->
+								</section>
+							</div>
+							<button id="popup" onclick="div_show()">Get Your Kit</button>
+						</ul>
+					</div>
+				</div>
+				<!-- START garnish wrap close -->
+			</div>
+		</div>
+		<!-- END garnish wrap close -->
+	</div>
+
+
+</div>
